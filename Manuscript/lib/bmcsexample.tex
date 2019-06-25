@@ -1,0 +1,33 @@
+
+%\setlength\parindent{0pt}
+
+\makeatletter
+\newcommand{\listofbmcsexamples}{%
+  \section*{Examples}
+  \@starttoc{env}% Starting to show the environment list (file extension `.env`)
+}
+\makeatother
+
+\newcounter{Example}
+
+
+\newenvironment{bmcsexample}[1]
+{%   
+    \stepcounter{Example}  % should be \refstepcounter rather?
+    \vspace{10pt}
+    {\Large{\textbf{Example \thechapter.\theExample: #1}  }} \\[5pt] %Is this necessary?
+   % Write the number and enviroment name to the `.env` list file 
+   \addcontentsline{env}{section}{\protect\numberline{[\thechapter.\theExample]}~#1}% 
+    %  \addtocontents{env}{\protect\contentsline{section}{\theSection~#1}{\thepage}}
+}
+
+\AtBeginDocument{%
+%  \addtocontents{env}{\protect\begin{center}}
+    \addtocontents{env}{\protect\begin{minipage}{11cm}}
+}
+
+\AtEndDocument{%
+  \addtocontents{env}{\protect\end{minipage}}
+%  \addtocontents{env}{\protect\end{center}}
+}
+

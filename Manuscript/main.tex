@@ -1,0 +1,92 @@
+% !TeX document-id = {c563f3ab-d450-45cf-a935-b20492a6f8a6}
+% !TeX program = pdflatex
+% !BIB program = biber
+% !TeX encoding = UTF-8
+% !TeX spellcheck = en_GB
+% Requires:
+% texlive 2016: Ubuntu 14.04 and 16.04 PPA: ppa:jonathonf/texlive
+%  pdflatex --enable-write18, biber, makeglossary
+%  perl, ghostscript
+%
+\documentclass[fleqn]{lib/scidoc}
+%
+\input{lib/packages}
+\input{lib/example}
+\input{lib/bmcsex}
+\input{shortcuts/defs}
+\input{bib/bibliographies}
+
+\title{Brittle-Matrix Composite Structures}
+\author{Rostislav Chudoba}
+%
+\begin{document}
+%
+\maketitle
+
+\pagenumbering{arabic}
+%
+\blankpage
+% TABLE OF CONTENTS
+\microtypesetup{protrusion=false}  % disable protrusion
+\pdfbookmark[0]{Contents}{toc}
+\tableofcontents % prints Table of Contents
+% LISTS AND GLOSSARIES
+\listoffigures
+\listofexamples
+
+%  \clearpage
+%  \listoftables
+%  \clearpage
+%  \printglossary[title = Nomenclature,  %
+%           type = main,    %
+%          ]
+%  \glsresetall
+%  \clearpage
+\microtypesetup{protrusion=true}  % enables protrusion
+\clearpage
+% 
+% CONTENT
+%
+%
+
+\label{ch:general-section}
+
+\subfile{part00-introduction}
+
+\tcbstartrecording
+
+\part{Debonding}
+\label{PartDebonding}
+
+\subfile{part01-debond}
+
+\part{Cracking}
+\label{PartDebonding}
+
+\subfile{part02-crack}
+
+\tcbstoprecording
+
+\tcblistof{bmcsex}{Examples}
+
+\part{Cracking \& Debonding}
+
+\subfile{part03-crack_debond}
+
+
+%\part{Structure}
+%
+%\subfile{part04-structure}
+
+\section*{References}
+
+% BIBLIOGRAPHY
+\microtypesetup{protrusion=false}  % disables protrusion
+\printbibliography[resetnumbers=true, heading = bibintoc, category=cited, segment=0]
+\microtypesetup{protrusion=true}  % enables protrusion
+
+\appendix
+
+\subfile{appendix_febond}
+
+\end{document}

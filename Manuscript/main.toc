@@ -1,0 +1,286 @@
+\select@language {UKenglish}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {UKenglish}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Figures}{4}{chapter*.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{8}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}What is this course about?}{8}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Scope and structure of the course}{10}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Example applications of cementitious composites}{10}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}BMCS Tool Suite}{11}{section.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}Warm-up exercises}{12}{section.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\numberline {I}Debonding}{14}{part.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Pull-Out}{15}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Outline:}{15}{section*.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Addressed questions:}{15}{section*.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Pullout test setup}{15}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Question:}{18}{section*.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Objectivity of a material model}{18}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Analytically solvable pullout problems}{20}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}Constant shear bond to a rigid matrix}{21}{subsection.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Question:}{23}{section*.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Solution:}{23}{section*.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Results:}{23}{section*.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Task:}{23}{section*.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Question:}{24}{section*.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Solution:}{24}{section*.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Results:}{24}{section*.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Task:}{24}{section*.28}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Task:}{24}{section*.29}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}Constant shear bond to elastic matrix}{24}{subsection.2.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.2.1}Matrix supported at the loaded end (BC1)}{25}{subsubsection.2.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Task:}{26}{section*.31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.2.2}Matrix supported at unloaded end (BC2)}{26}{subsubsection.2.3.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Task:}{26}{section*.32}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Task:}{26}{section*.33}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Task:}{27}{section*.34}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Task:}{27}{section*.35}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.3}Piecewise linear bond-slip law}{27}{subsection.2.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Conclusions and remarks}{27}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Bond behavior}{28}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Outline:}{28}{section*.36}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Addressed questions:}{28}{section*.37}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Generally nonlinear bond-slip law}{28}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Task:}{29}{section*.39}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Bond-slip law with hardening}{30}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Question:}{30}{section*.40}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Task:}{31}{section*.41}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Task:}{31}{section*.42}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}How to determine the anchorage length in case of the constant bond-slip law?}{31}{subsection.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Pullout problem for bond slip law with softening}{33}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Question:}{33}{section*.45}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Task:}{33}{section*.46}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Task:}{33}{section*.47}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Finite element solution of the pullout problem}{34}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Iterative solver for a general non-linear finite element simulation}{34}{section.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.1}Related questions}{36}{subsection.3.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Unloading and Reloading}{37}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Outline:}{37}{section*.50}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Addressed questions:}{37}{section*.51}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Experimental observation}{37}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Question:}{37}{section*.53}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Phenomenology of the bond behavior}{38}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Damage model}{40}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}Softening function [Jirasek]}{41}{subsection.4.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}Softening function [Abaqus]}{41}{subsection.4.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.3}Hardening function [Li]}{41}{subsection.4.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Task:}{42}{section*.58}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Plasticity model}{42}{section.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Return mapping algorithm}{45}{section.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}Damage-Plasticity model}{47}{section.4.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Inelastic analysis of pull-out response}{50}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Pullout governed by plasticity}{50}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Questions and tasks:}{50}{section*.61}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Pullout governed by damage}{50}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Questions and tasks:}{50}{section*.62}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Remark}{51}{section*.63}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\numberline {II}Cracking}{52}{part.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Softening and fracture}{53}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Outline}{53}{section*.64}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Addressed questions}{53}{section*.65}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Is energy dissipation an objective material property?}{53}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Energetic interpretation of the nonlinear structural response}{54}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}General formula for energy supply}{54}{section.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Task:}{56}{section*.67}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Question:}{56}{section*.68}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Question:}{56}{section*.69}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Cohesive zone, softening, energy dissipation}{57}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Sensitivity of strain-softening models with respect to size of the localization zone}{57}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Softening function accounting for fracture energy}{58}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Energy dissipation for strain softening}{59}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Work energy supply}{59}{section*.71}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Stored energy:}{60}{section*.72}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Remark:}{60}{section*.73}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Questions}{61}{section*.74}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Correspondence between softening and damage functions}{61}{section.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Questions}{62}{section*.75}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Softening and finite elements}{63}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Effect of element size on the strain localization for linear softening law}{63}{section.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Regularization of the softening law in finite element code}{64}{section.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.3}Implementation of softening in finite-element codes}{65}{section.8.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.4}Implementation of softening behavior in finite element code}{66}{section.8.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Tasks}{68}{section*.77}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}Crack propagation}{69}{chapter.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.1}Propagation of a straight crack}{69}{section.9.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Tasks}{69}{section*.80}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Direct evaluation of the fracture energy:}{70}{section*.82}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.2}Petersen three-point bending test series}{71}{section.9.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Direct evaluation of fracture energy:}{71}{section*.83}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Numerical simulation of Petersson tests}{72}{section*.85}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Simulation results}{72}{section*.86}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Choice of the softening law:}{72}{section*.88}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.3}Onset of damage}{73}{section.9.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3.1}Rankine failure surface}{74}{subsection.9.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3.2}Mazars failure surface}{74}{subsection.9.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {10}Onset of inelasticity in a continuum}{75}{chapter.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.1}Representation of strain and strain in a continuum}{75}{section.10.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.2}Examples of yield conditions}{77}{section.10.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Questions:}{79}{section*.90}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Drucker-Prager}{79}{section*.91}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Question:}{79}{section*.92}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Question:}{79}{section*.93}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Abaqus}{79}{section*.94}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Questions:}{80}{section*.95}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Willam-Warnke}{80}{section*.96}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Exercise}{80}{section*.97}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {11}Shear \& Crack}{81}{chapter.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.1}Double-edge notched test}{82}{section.11.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.1.1}Numerical simulation using concrete damage plasticity model}{83}{subsection.11.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Brief characterization of the model}{83}{section*.101}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.1.2}Numerical simulation using \textit {microplane damage model}}{85}{subsection.11.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.2}Elementary tests of material models for concrete cracking}{87}{section.11.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.2.1}Willam test}{89}{subsection.11.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.3}Examples}{89}{section.11.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\numberline {III}Cracking \& Debonding}{91}{part.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {12}Tensile response of brittle-matrix composites}{92}{chapter.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.1}Pseudo-ductility}{92}{section.12.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Composite stress-strain curve}{94}{section*.115}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.1.1}Effect of reinforcement ratio}{95}{subsection.12.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {13}Influence of heterogeneity}{96}{chapter.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {14}Shear loading}{97}{chapter.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Multilayer model}{98}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Governing equations}{98}{section.A.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.1.1}Weak formulation of the multi-layer problem}{99}{subsection.A.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.1.2}Finite element discretization}{99}{subsection.A.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.1.3}Iterative solution algorithm}{100}{subsection.A.1.3}

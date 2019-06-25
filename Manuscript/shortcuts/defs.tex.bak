@@ -1,0 +1,140 @@
+
+%
+% Reset the figure environment
+%
+\renewcommand{\topfraction}{.95}
+\renewcommand{\textfraction}{.05}
+\renewcommand{\floatpagefraction}{.95}
+
+\newcommand{\mbf}[1]{\mbox{\boldmath$#1$}}
+\font\mbff=cmbsy10\def\mbfx#1{\hbox{\mbff#1}}%\let\mbf\Mbff
+\newcommand{\del}[2]{\mbox{$\displaystyle\frac{#1}{#2}$}}
+\newcommand{\pard}[2]{\del{\partial {#1}}{\partial {#2}}}
+\newcommand{\ppd}[2]{\del{\partial \,{#1}}{\partial \,{#2}}}
+\newcommand{\dpd}[2]{\del{\partial ^{2}\,{#1}}{\partial \,{#2}^{2}}}
+\newcommand{\tpd}[2]{\del{\partial ^{3}\,{#1}}{\partial \,{#2}^{3}}}
+\newcommand{\cpd}[2]{\del{\partial ^{4}\,{#1}}{\partial \,{#2}^{4}}}
+\newcommand{\pardline}[2]{\partial {#1} / \partial {#2}}
+\newcommand{\pardat}[3]{\left. \del{\partial \,{#1}}{\partial \,{#2}} \right|_{#3}} 
+%\font\bff=cmssbx10
+\newfont{\bff}{cmssbx10 scaled 1150}
+\def\bfx#1{\hbox{\bff#1}}%\let\mbf\Bff
+\newcommand{\bfa}{\bfx}
+%\newcommand{\spd}[1]{\del{\partial ^{3}\,{#1}}{\partial \,x\,\partial \,t^{2}}}
+%\newcommand{\scpd}[1]{\del{\partial ^{4}\,{#1}}{\partial \,x^{2}\,\partial
+%\,t^{2}}}
+\newcommand{\der}[2]{\del{d \,{#1}}{d \,{#2}}}
+\newcommand{\dd}[2]{\del{d ^2\,{#1}}{d \,{#2}^2}}
+\newcommand{\td}[2]{\del{d ^3\,{#1}}{d \,{#2}^3}}
+\newcommand{\cd}[2]{\del{d ^4\,{#1}}{d \,{#2}^4}}
+\newcommand{\vp}{\varphi}
+\newcommand{\MKP}{{MKP$\;\;$}}
+\newcommand{\inl}[2]{\mbox{$\displaystyle\int_{#1}^{#2}$}}
+\newcommand{\sul}[2]{\mbox{$\displaystyle\sum_{#1}^{#2}\,$}}
+\newcommand{\limit}[1]{\mbox{$\displaystyle\lim_{#1}$}}
+\newcommand{\varPhi}{\Phi}
+\newcommand{\varPsi}{\Psi}
+%
+% The following macros define uniform indexing semantics
+%
+\newcommand{\sol}[1]{#1_*}
+\newcommand{\const}[1]{#1_*}
+\newcommand{\init}[1]{#1^{*}}
+\newcommand{\incr}[1]{#1^{+}}
+\newcommand{\refr}[1]{#1^{R}}
+\newcommand{\normalize}[1]{\left\Vert #1 \right\Vert}
+\newcommand{\range}[1]{#1^{\mbox{\scriptsize lim}}}
+\newcommand{\apprx}[1]{#1_{\mbox{\scriptsize a}}}
+
+\newcommand{\StaticMatrix}{\bfa{A}}
+\newcommand{\GeomMatrix}{\bfa{B}}
+\newcommand{\PlasticHP}{\bfa{N}}
+\newcommand{\StressVector}{\mbf{\beta}}
+\newcommand{\LoadVector}{\bfa{R}}
+\newcommand{\PlasticModuli}{\bfa{k}}
+\newcommand{\PlasticPotential}{\bfa{f}}
+\newcommand{\NullVector}{\bfa{0}}
+\newcommand{\UnitMatrix}{\bfa{I}}
+\newcommand{\DisplRateVector}{\dot{\bfa{u}}}
+\newcommand{\StrainRateVector}{\dot{\bfa{q}}}
+\newcommand{\CostFactorVector}{\bfa{c}}
+\newcommand{\PlasticMultiple}{\mbf{\lambda}}
+\newcommand{\DesignVarVector}{\bfa{X}}
+\newcommand{\DesignVar}{X}
+\newcommand{\ElemDesignVar}{X_{e}}
+\newcommand{\DesStepLength}{\xi}
+\newcommand{\DesDriftVector}{\incr{\DesignVarVector{}}}
+%\newcommand{\UnitDesDriftVector}{\Vert\incr{\DesignVarVector{}}\Vert}
+\newcommand{\UnitDesDriftVector}{\bfa{x}}
+\newcommand{\UnitDesDriftVectorE}{x_e}
+\newcommand{\GMatrix}{\bfa{G}}
+\newcommand{\SystemMatrix}{\bfa{K}}
+\newcommand{\ElemMatrix}{\bfa{K}_{e}}
+\newcommand{\StateVector}{\bfa{r}}
+\newcommand{\StateSensVector}{\pard{\bfa{r}}{\DesStepLength}}
+\newcommand{\AdjVector}{\mbf{\varrho}}
+\newcommand{\RedAdjBase}{\AdjVector{}_{B}}
+\newcommand{\RedStateBase}{\StateVector{}_{B}}
+\newcommand{\RedBaseCoeffs}{\bfa{y}}
+
+\newcommand{\YieldPathClass}{{\em YieldPath}}
+\newcommand{\YieldPathSensClass}{{\em YieldPathSens}}
+\newcommand{\DesChangeDirClass}{{\em DesChangeVec}}
+\newcommand{\DesignVarClass}{{\em DesignVariable}}
+\newcommand{\ResponseClass}{{\em Reponse}}
+\newcommand{\ResponseSensClass}{{\em ReponseSens}}
+\newcommand{\ElemDesParamClass}{{\em ElemDesParam}}
+\newcommand{\ElemParamClass}{{\em ElemParam}}
+\newcommand{\RCBeam}{{\em RCBeam2DSection}}
+\newcommand{\RCBeamClass}{{\em RCBeam2DSection}}
+\newcommand{\RCGenBeamClass}{{\em RCBeam}}
+\newcommand{\RCFrameClass}{{\em RCFrame}}
+\newcommand{\EtBeamClass}{{\em EtBeam2D}}
+\newcommand{\ElementClass}{{\em Element}}
+\newcommand{\ElemModeClass}{{\em ElemMode}}
+\newcommand{\EmAxialXClass}{{\em EmAxialX}}
+\newcommand{\EmBendZClass}{{\em EmBendZ}}
+\newcommand{\FEAlgorithmClass}{{\em Algorithm}}
+\newcommand{\MatModelClass}{{\em MaterialModel}}
+%\newcommand{\AccessPathClass}{{\em RespValAccessPath}}
+\newcommand{\EtTrussClass}{{\em EtTruss3D}}
+\newcommand{\TrussSecClass}{{\em TrussSec}}
+\newcommand{\RectBeamSecClass}{{\em RectBeamSec}}
+\newcommand{\RCBeamSecClass}{{\em RCBeamSec}}
+\newcommand{\SystemMatrixClass}{{\em SystemMatrix}}
+\newcommand{\RhSVectorClass}{{\em RhSVector}}
+\newcommand{\VectorClass}{{\em Vector}}
+\newcommand{\SLMatrixClass}{{\em SLMatrix}}
+\newcommand{\StateAccessPath}{{\em RespAccessPath}}
+\newcommand{\RPOClass}{{\em RPO}}
+
+\newcommand{\FEDomain}{{\em FE-Domain}}
+\newcommand{\OptDomain}{{\em Opt-Domain}}
+\newcommand{\DesDomain}{{\em Design-Domain}}
+\newcommand{\SADomain}{{\em SA-Domain}}
+
+\newcommand{\SparseLib}{{\em SparseLib}}
+\newcommand{\Structure}{{\em Structure}}
+
+\newcommand{\SensAnal}{{\em SensAnal}}
+\newcommand{\FEAnalysis}{{\em FE-Analysis}}
+
+\newcommand{\OOL}{{\em OOL}}
+\newcommand{\CPP}{{\em C++}}
+\newcommand{\cpp}{{\em C++}}
+\newcommand{\SmallTalk}{{\em SmallTalk}}
+\newcommand{\Self}{{\em Self}}
+
+\newcommand{\OOUI}{{\em OOUI}}
+\newcommand{\OODBMS}{{\em OODBMS}}
+\newcommand{\AOODBMS}{{\em AOODBMS}}
+
+\newcommand{\Diffpack}{{\em Diffpack}}
+\newcommand{\crosssection}[1]{\mbox{cs}(#1)}
+\newcommand{\loadstep}[1]{\mbox{ls}(#1)}
+\newcommand{\scrosssection}[1]{\mbox{\scriptsize cs}(#1)}
+\newcommand{\sloadstep}[1]{\mbox{\scriptsize ls}(#1)}
+
+\newcommand{\LP}[1]{LP}
+
+\newcommand{\SID}{{SID}}

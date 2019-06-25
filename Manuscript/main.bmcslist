@@ -1,0 +1,50 @@
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {1.1}{\ignorespaces Material stiffness of a composite cross section}}{12}{tcb@cnt@bmcsex.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {1.2}{\ignorespaces Volume fractions and reinforcement ratio}}{13}{tcb@cnt@bmcsex.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {2.1}{\ignorespaces Pullout from rigid matrix}}{23}{tcb@cnt@bmcsex.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {2.2}{\ignorespaces Pullout from rigid matrix with extra bar length at the loaded end}}{24}{tcb@cnt@bmcsex.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {2.3}{\ignorespaces Pullout from elastic matrix clamped right}}{25}{tcb@cnt@bmcsex.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {2.4}{\ignorespaces Pullout from elastic matrix clamped left}}{26}{tcb@cnt@bmcsex.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {2.5}{\ignorespaces Pullout of a short fiber with decreasing bond length}}{27}{tcb@cnt@bmcsex.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {3.1}{\ignorespaces Piecewise-linear bond slip laws}}{29}{tcb@cnt@bmcsex.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {3.2}{\ignorespaces Simulation of the RILEM pullout test}}{30}{tcb@cnt@bmcsex.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {3.3}{\ignorespaces Simulation of debonding between CFRP sheet and concrete}}{33}{tcb@cnt@bmcsex.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {3.4}{\ignorespaces Demonstration of the solution algorithm}}{36}{tcb@cnt@bmcsex.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {4.1}{\ignorespaces What happens if a pullout with multilinear bond-slip law gets unloaded?}}{38}{tcb@cnt@bmcsex.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {4.2}{\ignorespaces Bond behavior governed by damage}}{42}{tcb@cnt@bmcsex.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {4.3}{\ignorespaces Bond behavior governed by plasticity}}{44}{tcb@cnt@bmcsex.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {5.1}{\ignorespaces Pullout responose simulated using plastic material model}}{50}{tcb@cnt@bmcsex.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {5.2}{\ignorespaces Pullout simulated using damage model}}{50}{tcb@cnt@bmcsex.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {6.1}{\ignorespaces Energy dissipation in a pullout test with constant bond}}{56}{tcb@cnt@bmcsex.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {7.1}{\ignorespaces Tensile behavior of a specimen with a softening zone}}{60}{tcb@cnt@bmcsex.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {7.2}{\ignorespaces Transformation of a softening function to damage function}}{62}{tcb@cnt@bmcsex.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {8.1}{\ignorespaces Mesh bias for discretized bar with linear softening}}{64}{tcb@cnt@bmcsex.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {8.2}{\ignorespaces Discretized bar with regularized linear softening}}{65}{tcb@cnt@bmcsex.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {8.3}{\ignorespaces Iterative solution of the localization problem}}{67}{tcb@cnt@bmcsex.8.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {8.4}{\ignorespaces Standard finite element code}}{67}{tcb@cnt@bmcsex.8.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {9.1}{\ignorespaces Regularized numerical model of a bending test}}{69}{tcb@cnt@bmcsex.9.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {tcolorbox}{\numberline {10.1}{\ignorespaces Tensorial invariants and deviatoric strain tensor}}{80}{tcb@cnt@bmcsex.10.1}

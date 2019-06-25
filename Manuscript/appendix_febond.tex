@@ -1,0 +1,224 @@
+
+
+\documentclass[main.tex]{subfiles}
+
+\begin{document}
+
+
+\chapter{Multilayer model}
+
+\section{Governing equations}
+
+In pull-out tests, the reinforcements are pulled out from the matrix as shown in Fig.~\ref{fig:pullout}. The output of such tests is typically the relationship between the pull-out force $P$ and the displacement $w$. Two coupled problems can be formulated based on the pull-out test, the direct pull-out problem and the inverse pull-out problem. In some cases, for example in order to verify the experimental results, one needs to numerically determine the pull-out force vs displacement relationship according to the known bond-slip law, which formulates the direct pull-out problem. More commonly, the purpose of pull-out tests is to determine the unknown bond-slip law according the test output, this kind of problems are named as the inverse pull-out problems.   
+
+Let us consider the following simple case for some insight into the mathematical background of the pull-out problems. For thin specimens made of cementitious composites, the shear deformation in matrix can generally be neglected, thus the problem can be simplified to a one dimensional problem as shown in Fig.~\ref{fig:simplified}. The reinforcement and the matrix are coupled through the bond interface in which the shear stress $\tau$ is characterized as a function of the slip $s$.
+\begin{figure}[tb!]
+	\centering
+%	\includegraphics[width=10cm]{1_pull_out.pdf}
+	\caption{Schematic picture of a typical pull-out test}
+	\label{fig:pullout}
+\end{figure}
+\begin{figure}[tb!]
+	\centering
+%	\includegraphics[width=9.5cm]{2_simplified.pdf}
+	\caption{A simplified mechanical model of the pull-out problem}
+	\label{fig:simplified}
+\end{figure}
+The equilibrium of an infinitesimal segment of the reinforcement leads to
+\begin{equation} \label{eq:f_equi}
+ {A_{\mathrm{f}}}\sigma_{\mathrm{f},x} - p \tau(s) = 0,
+\end{equation}
+where the index $(.)_{,x}$ denotes the derivative with respect to the spatial coordinate $x$, $A_{\mathrm{f}}$  and $p$ are the cross-sectional area and the perimeter of the reinforcement, receptively. Similarly, the equilibrium of the matrix can be expressed as
+\begin{equation} \label{eq:m_equi}
+ {A_{\mathrm{m}}}\sigma_{\mathrm{m},x} + p \tau(s) = 0,
+\end{equation}
+in which $A_\mathrm{m}$ is the cross-sectional area of the matrix.
+
+The slip in the bond interface is defined as $s = {u_{\rm{f}}} - {u_{\rm{m}}}$ , where  ${u_{\rm{f}}}$ and ${u_{\rm{m}}}$  are the reinforcement displacement and matrix displacement, respectively. The second order derivative of $s$  can be written as
+\begin{equation} \label{eq:slip}
+s_{,xx} = {\varepsilon _{\rm{f,x}}} - {\varepsilon _{\rm{m,x}}},
+\end{equation}
+where ${\varepsilon _{\rm{f}}}$  is the reinforcement strain and ${\varepsilon _{\rm{m}}}$ is the matrix strain. The constitutive laws of the reinforcement and the matrix are given as
+\begin{align} \label{eq:constituitive}
+{\sigma _{\rm{f}}} &= D_{\rm{f}}^{}(\varepsilon_{\rm{f}})\\
+{\sigma _{\rm{m}}} &= D_{\rm{m}}^{}(\varepsilon_{\rm{m}}).
+\end{align}
+
+\subsection{Weak formulation of the multi-layer problem}
+
+In order to generize the differential bond problem for multi-layer multi-dimensional plies let us rewrite the equilibrium equations defined in Eq.~(\ref{eq:constituitive}) with enumerated layers
+\begin{align}
+\nonumber
+ \sigma(u_1)_{1,x} - \tau(u_2-u_1) = 0 \\
+ \tau(u_2-u_1) + \sigma(u_2)_{2,x} = 0
+\end{align}
+without distinguishing between matrix and fibers. By introducing a layer index $c = [1,2]$ we can rewrite the equations in an indicial notation as
+\begin{align}
+\label{eq:strong_diff_form_indicial}
+\delta_{cd} A_c \sigma_{c,x} + \delta_{cd} \left(-1\right)^{c} p_c \MaxShear = 0, \;\; c,d = [1,2]
+\end{align}
+In order to provide a more general model of the pull-out problem defined by these differential equations we construct a weak form of the boundary value problem within the 
+domain  $\Omega := [0,L]$ shown in Fig.~\ref{fig:simplified} . The corresponding essential and natural boundary conditions are specified as
+ \begin{equation}\label{eq:BC_discrete_1D}
+ \begin{array}{rclcrcl}
+ u_c &=& \bar{u}_c(\theta) \;\; \mathrm{on} \;\; \Gamma_{u_c}  &
+ \mathrm{and} & \;
+ \sigma_c A_c &=& \bar{t}_c(\theta) \;\; \mathrm{on} \;\;
+ \Gamma_{t_c} 
+ \end{array}
+ \end{equation} Denoting the integration of the product of the terms $u$, $v$ over $V$ as $\left( u , v \right)_V$, the weak formulation can be expressed as
+\begin{align}
+\label{eq:VarFormWeak}
+ \DomainInteg{v_d}{\delta_{cd} A_c \sigma_{c,x} + \delta_{cd} \left(-1\right)^{c} p_c \MaxShear} +
+\BCInteg{v_c} {u_c- \bar{u}_c(\theta)}{u_c}  +
+\BCInteg{v_c} {-A_c \sigma_{c} + \bar{t}_c(\theta)}{t_c}
+ =  0
+\end{align}
+Since $v_c=0$ on $ \Gamma_{u_c} $, the second and fifth terms in Eq.~(\ref{eq:VarFormWeak}) vanish. Using integration by parts, the orders of the the stress derivatives $\sigma_{c,x}$ can be reduced as follows
+\begin{align}
+\label{eq:IntegByParts}
+\DomainInteg{ v_{d} }{ \delta_{cd} A_{c} \sigma_{{c},x} }
+& =  
+-
+\DomainInteg{ v_{{d},x} }{ \delta_{cd} A_{c} \sigma_{c} }
++
+\BCInteg{ v_{d} } { \delta_{cd} A_{c} \sigma_{c}  } {}
+\end{align}
+Finally, by substituting Eq.~(\ref{eq:IntegByParts}) for both matrix and fibers into Eq.~(\ref{eq:VarFormWeak}), the following variational formulation of the pull-out problem is obtained
+\begin{align}
+\label{eq:variational_form}
+\DomainInteg{v_{d,x}} {\delta_{cd} A_c{\sigma}_{c} }
++ 
+\DomainInteg{v_{d} \left(-1\right)^{d}} {\delta_{cd} p_c \MaxShear}
+ - 
+\BCInteg{v_{d}} { \delta_{cd} \bar{t}_{c}(\theta)}{t_{c}}
+ =  0.
+\end{align}
+Note that the term $v_d (-1)^d = \delta (v_2 - v_1) = \delta s$ renders the virtual slip between the components. 
+
+\subsection{Finite element discretization}
+
+The displacement field of a material component $c = 1 \ldots N_c$ for $N_c$ number of components is approximated using the shape functions
+\begin{align}
+ \label{eq:u_c_ansatz}
+\nonumber
+ u_c &= N_{I} \; d_{cI} & u_{cE} &= N_{i} d_{cI[E,i]} \\
+ v_c &= N_{I} \; \tilde{d}_{cI} & v_{ce} &= N_{i} \tilde{d}_{cI[E,i]}
+\end{align}
+with index $I = 1 \ldots N_d$ representing a global node number. 
+In the present case of the pull-out problem, index 1 represents the matrix $\mathrm{m}$ and index 2 the fibers $\mathrm{f}$  
+The strain field in each material component is then expressed as
+\begin{align}
+ u_{c,x} &= B_{I} \; d_{cI} \\
+ v_{c,x} &= B_{I} \; \tilde{d}_{cI}
+\end{align}
+where $B_{I} = N_{I,x} = N_{I,\xi} J(\xi)^{-1}$. As a consequence, the slip field is approximated 
+as
+\begin{align}
+ s = u_2 - u_1 = u_c \left(-1\right)^c = \left(-1\right)^c N_I d_{cI}.
+\end{align}
+Eq.~(\ref{eq:variational_form}) can be rewritten as
+\begin{equation}
+\label{eq:variational_form_m}
+\tilde{d}_{dI} \DomainInteg{B_{I}}{\delta_{cd} A_c \sigma_c} +
+\tilde{d}_{dI} \DomainInteg{  \left(-1\right)^{d} N_I } {\delta_{cd} p_c\MaxShear} -
+\tilde{d}_{dI} \BCInteg{N_{I}}{ \delta_{cd} \bar{t}_{c}(\theta)}{t_{c}} = 0, 
+\end{equation}
+Since $\tilde{d}_{dI}$ is arbitrary, and  $\BCInteg{N_{I}}{ \bar{t}_{c}}{t_{c}}$
+can be simplified to nodal loads as $\bar{t}_{cI}$
+Eq.~(\ref{eq:variational_form_m}) can be reduced to 
+\begin{equation}
+\label{eq:residual}
+R_{dI}(\theta)  = \delta_{cd}
+\left[
+\DomainInteg{B_{I}}{ A_c \sigma_c} + 
+\DomainInteg{ \left(-1\right)^{c} N_I } {p_c\MaxShear} -
+\bar{t}_{cI}(\theta) 
+\right] =
+0.
+\end{equation}
+
+\subsection{Iterative solution algorithm}
+In case of nonlinear material behavior assumed either for the matrix, reinforcement or bond, 
+Eq.~(\ref{eq:residual}) must be prepared for iterative solution
+strategies by means of linearization i.e. by Taylor expansion neglecting
+quadratic and higher order terms. The expansion up to the linear term reads
+\begin{equation}
+\label{eq:ResiduumGlobal}
+R^{(\theta)}_{dI}(d_{cJ}^{(k)})
+\approx
+R^{(\theta)}_{dI}(d_{cJ}^{(k-1)})
++
+\left.
+\parder{ R_{dI} }{d_{cJ}}
+\right|_{d_{cJ}^{(k-1)}}
+\Delta d_{cJ}^{(k)}.
+%( \mbf{d}_k - \mbf{d}^{(k-1)} )
+\end{equation}
+Assuming nonlinear material behavior of the components $c$, the derivative of the residual $R_{dI}$ with respect to $d_{cI}$ reads
+\begin{equation} \label{eq:ARAd}
+\parder{\sigma_c}{d_{cJ}}
+=
+\parder{\sigma_c}{\varepsilon_{c}} \parder{\varepsilon_c}{d_{cJ}}
+=
+\parder{\sigma_c}{\varepsilon_{c}} B_{J} 
+\end{equation}
+Similarly, for nonlinear bond behavior, the derivative of shear flow with respect to 
+\begin{equation} \label{eq:ARAd}
+\parder{\tau}{d_{cJ}}
+=
+\parder{\tau}{s} \parder{s}{d_{cJ}}
+=
+\parder{\tau}{s} N_{J} \left(-1\right)^{c} 
+\end{equation}
+The derivative of the residual then reads
+\begin{align} \label{eq:ARAd}
+\left. \parder{ R_{dI} }{d_{cJ}}\right|_{d_{cJ}^{k-1}} = K_{dIcJ}^{(k-1)} 
+& = 
+\delta_{cd} A_c \inl{\Omega}{}{ B_{I} B_{J} \left.\parder{\sigma_d}{\varepsilon_{c}}\right|_{d_{cJ}^{k-1}}  }
+ \mathrm{d}x \\[2mm]
+& +
+\left(-1\right)^{c+d}
+p_c \inl{\Omega}{}{   N_{I} N_{J} \left.\parder{\tau}{s}\right|_{d_{cJ}^{k-1}}   }
+ \mathrm{d}x
+\end{align}
+Assuming a linear elastic constitutive law of the components the derivatives of $\sigma_c$ with respect to $\varepsilon_d$ read 
+\begin{equation} \label{eq:AsigAd}
+\delta_{cd} \parder{\sigma_c}{\varepsilon_c} = E_d
+\end{equation}
+and linear bond 
+\begin{equation} \label{eq:D_matrix}
+\parder{\tau}{s} = G
+\end{equation}
+is the constitutive matrix. Finally, substituting Eqs.~(\ref{eq:ARAd}) and (\ref{eq:AsigAd}) into Eq.~(\ref{eq:ResiduumGlobal}), the following incremental form of equilibrium is obtained,
+\begin{equation} \label{eq:incre_equi}
+K_{dIcJ}^{(k-1)} \Delta d_{cJ}^{(k)} = R^{(\theta)}_{dI}(d_{cJ}^{(k-1)})
+\end{equation}
+
+By introducing index function $I(e,i)$ mapping the finite element and node number to a global degree of freedom.
+
+\begin{align} \label{eq:ARAd}
+K_{dIcJ}^{(k-1)} 
+& = 
+\left[
+A_c 
+B_{I(e,i)M(e,m)} B_{J(e,j)M(e,m)} 
+\delta_{cd}
+\left.\parder{\sigma_c}{\varepsilon_{c}}\right|_{d_{cJ}^{k-1}}
+\right.
+\\[2mm]
+& 
++
+\left.
+\delta_{cd}
+\left(-1\right)^{c+d}
+p 
+N_{I(e,i)M(e,m)} N_{J(e,j)M(e,m)} 
+\left.\parder{\tau}{s}\right|_{d_{cJ}^{k-1}}
+\right]
+w_{M(e,m)} 
+\left| J \right|_{M(e,m)}
+\end{align}
+
+
+\end{document}

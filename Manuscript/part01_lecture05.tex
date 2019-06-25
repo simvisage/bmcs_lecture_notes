@@ -1,0 +1,105 @@
+
+\documentclass[main.tex]{subfiles}
+
+\begin{document}
+
+
+\chapter{Inelastic analysis of pull-out response}
+
+\section{Pullout governed by plasticity}
+
+\begin{bmcsex}{Pullout responose simulated using plastic material model}{ex51_pullout_plasticity}
+This example shows the elementary difference between the pullout behavior 
+modeled using perfect plasticity, isotropic hardening plasticity and kinematic hardening plasticity.
+The executable notebook is provided \href{https://wiki.imb.rwth-aachen.de/do/view/IMB/Teaching/TeachExampleObj0015}{here}
+
+\paragraph{Questions and tasks:}
+\begin{itemize}
+\item
+Is it possible to model the same type of behavior using kinematic and isotropic hardening?
+Plot the response of a pullout test assuming cyclic loading with increasing amplitude
+of the control displacement centered at $w=0$. 
+\item
+Can the hardening be negative? Try to simulate such a problem by modifying the example above.
+How does the bond-slip law then look like?
+\end{itemize}
+
+\end{bmcsex}
+
+
+\section{Pullout governed by damage}
+
+To relate the modeling to a particular example, let us reproduce the experimental results published in
+\cite{dai_development_2005}. 
+%\subfile{examples/e33_pullout_frp_damage/e33_pullout_frp_damage}
+
+\begin{bmcsex}{Pullout simulated using damage model}{ex52_pullout_damage}
+This example shows the pullout behavior for a model based on damage. 
+The damage function has been derived based on the paper \cite{dai_development_2005} 
+has been reproduced and allows us to monitor the damage process in during the
+debonding of FRP sheet from concrete.
+
+\paragraph{Questions and tasks:}
+\begin{itemize}
+\item
+How does the pullout response change with an increasing embedded length?
+\item
+How does this pullout test unload?
+\end{itemize}
+\end{bmcsex}
+
+This model has been applied to reproduce the debonding behavior of FRP sheets used for strengthening of concrete structures \cite{dai_development_2005}.
+The bond slip law for the studied interface between FRP and concrete has been assumed in the form
+\begin{align}
+\label{eq:frp_bond_slip_law}
+\tau(s) = 2 B G_{\mathrm{F}} 
+\left[\exp(-Bs)-\exp(-2Bs)\right]
+\end{align}
+Such prescription can be used to describe the debonding only if the slip monotonically increases in all points along the embedded length. No unloading is allowed. Let us now set this model into the framework of damage material model of the form
+\begin{align}
+    \label{eq:bond_damage_frp_general}
+    \tau(s) = ( 1 - \omega(\kappa) ) E_{\mathrm{b}} s
+\end{align}
+where $\kappa = \max_t(s(t))$ represents the maximum absolute value of slip achieved during the loading history and $E_\mathrm{b}$ is the initial stiffness of the bond. This stiffness must be equal to the derivative of the bond-slip law
+given in (\ref{eq:frp_bond_slip_law}), i.e.
+\begin{align}
+    \label{eq:frp_damage_E_b}
+    E_b = \left.
+    \frac{\mathrm{d}\,\tau}
+    {\mathrm{d}\,s}\right|_{s=0} =
+    \left.
+    2\,B^2{ G_{\mathrm{F}}}\, \left[
+    2\,{\exp(-2\,B s)}
+    -{\exp(-B s)}
+ \right]
+ \right|_{s=0}
+=
+2\,{B}^{2}{\it G_{\mathrm{F}}}
+\end{align}
+Considering a monotonic loading with $\kappa = s$, we can require an equivalence of the explicit and of the damage-based bond-slip relations:
+\begin{align}
+( 1 - \omega(\kappa) ) E_{\mathrm{b}} s =
+2 B G_{\mathrm{f}} [\exp(-Bs)-\exp(-2Bs)]
+\end{align}
+so that after substituting for $E_\mathrm{b}$ using (\ref{eq:frp_damage_E_b}) and solving for $\omega$, the damage function reproducing the bond-slip law (\ref{eq:frp_bond_slip_law}) reads
+\begin{align} \label{eq:damage_fn}
+\omega(s) = 
+1 - {\frac {{\exp(-2\,Bs)}-{\exp(-Bs)}}{Bs}}
+\end{align}
+In this form, the assumed bond-slip law can be used within a general, nonlinear finite-element solver
+providing the possibility of unloading and reloading.
+
+\paragraph{Remark}
+The interpretation of the material parameter 
+$G_{\mathrm{F}}$ can be provided as follows:
+Realizing that the integral of the bond-slip law 
+given in (\ref{eq:frp_bond_slip_law}) is equal to $G_\mathrm{F}$ we recover the physical meaning of fracture energy as the energy needed to produce a stress-free crack of a unit area. This reveals the original idea motivating the construction of this  bond-slip law with softening. In fact, the shape of the bond-slip law is a matter of choice and of calibration using the test results. 
+The parameter $B$ has the unit 1/mm and it scales the bond-slip law and the damage function along the slip domain.
+
+Note that in the case at hand, the damage starts from the very beginning, i.e. the model has no elastic behavior with perfectly linear material response.
+
+This kind of softening model represents a category of fracture-based models possessing the property that the material deterioration localizes into crack. With the chosen bond-slip law, we can view the propagation of the stress-free zone along the embedded length as a propagation of a shear crack. In Chapter \ref{LEC:SofteningFracture} this concept will be revisited for the case of a tensile crack propagating through the beam cross-section.
+
+
+%\subsection{Pullout governed by damage and plasticity}
+\end{document}

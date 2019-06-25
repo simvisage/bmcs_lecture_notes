@@ -1,0 +1,102 @@
+\documentclass{article}
+\oddsidemargin=0cm
+\topmargin=-1cm
+\textwidth=16cm
+\textheight=25cm
+\usepackage{graphicx}          % include graphics
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+\usepackage[most]{tcolorbox}
+\newcounter{bmcsexample}
+\usepackage{xparse}
+\usepackage{lipsum}
+
+\def\exampletext{Example} % If English
+
+\NewDocumentEnvironment{bmcsexample}{ O{} }
+{
+\colorlet{colexam}{red!55!black} % Global example color
+\newtcolorbox[use counter=bmcsexample]{bmcsexamplebox}{%
+    % Example Frame Start
+    empty,% Empty previously set parameters
+    title={\exampletext: #1},% use \thetcbcounter to access the bmcsexample counter text
+    % Attaching a box requires an overlay
+    attach boxed title to top left,
+       % Ensures proper line breaking in longer titles
+       minipage boxed title,
+    % (boxed title style requires an overlay)
+    boxed title style={empty,size=minimal,toprule=0pt,top=4pt,left=3mm,overlay={}},
+    coltitle=colexam,fonttitle=\bfseries,
+    before=\par\medskip\noindent,parbox=false,boxsep=0pt,left=3mm,right=0mm,top=2pt,breakable,pad at break=0mm,
+       before upper=\csname @totalleftmargin\endcsname0pt, % Use instead of parbox=true. This ensures parskip is inherited by box.
+    % Handles box when it exists on one page only
+    overlay unbroken={\draw[colexam,line width=.5pt] ([xshift=-0pt]title.north west) -- ([xshift=-0pt]frame.south west); },
+    % Handles multipage box: first page
+    overlay first={\draw[colexam,line width=.5pt] ([xshift=-0pt]title.north west) -- ([xshift=-0pt]frame.south west); },
+    % Handles multipage box: middle page
+    overlay middle={\draw[colexam,line width=.5pt] ([xshift=-0pt]frame.north west) -- ([xshift=-0pt]frame.south west); },
+    % Handles multipage box: last page
+    overlay last={\draw[colexam,line width=.5pt] ([xshift=-0pt]frame.north west) -- ([xshift=-0pt]frame.south west); },%
+    }
+\begin{bmcsexamplebox}}
+{\end{bmcsexamplebox}\endlist}
+
+
+\begin{document}
+        
+\begin{bmcsexample}[Bond plasticity]
+\noindent This example shows the response of bond material point 
+with kinematic hardening with unloading and reloading.
+ \\[3mm]
+\begin{center}
+\begin{tabular}{lrp{4cm}}\hline
+Model parameter & Symbol = Value [Unit] & Description  \\\hline \hline
+n\_steps & $n_\mathrm{s}$ = 2000 [-] & {\footnotesize None}  \\
+            material\_model & option = plasticity [-] & {\footnotesize None}  \\
+            interaction\_type & option = predefined [-] & {\footnotesize None}  \\
+            \hline
+\multicolumn{3}{l}{loading\_scenario : LoadingScenario}\\ \hline
+
+number\_of\_cycles & $n_\mathrm{cycles}$ = 2 [-] & {\footnotesize None}  \\
+            number\_of\_increments & $n_{\mathrm{incr}}$ = 20 [-] & {\footnotesize None}  \\
+            loading\_type & option = cyclic [-] & {\footnotesize None}  \\
+            maximum\_loading & $\phi_{\max}$ = 0.005 [-] & {\footnotesize None}  \\
+            amplitude\_type & option = constant [-] & {\footnotesize None}  \\
+            unloading\_ratio & $\phi_{\mathrm{unload}}$ = 0.5 [-] & {\footnotesize None}  \\
+            loading\_range & option = non-symmetric [-] & {\footnotesize None}  \\
+            
+\multicolumn{3}{r}{\includegraphics[width=5cm]{fig139803500934064.pdf}}\\
+\hline
+\multicolumn{3}{l}{mats\_eval : MATSBondSlipEP}\\ \hline
+
+E\_b & $E_\mathrm{b}$ = 12900 [MPa/mm] & {\footnotesize Bond stiffness}  \\
+            K & $K$ = 0.0 [MPa/mm] & {\footnotesize Isotropic hardening modulus}  \\
+            tau\_bar & $\bar{\tau}$ = 5 [MPa] & {\footnotesize Yield stress}  \\
+            gamma & $\gamma$ = 2000.0 [MPa/mm] & {\footnotesize Kinematic hardening modulus}  \\
+            \hline \end{tabular}
+
+
+\end{center}
+
+\noindent
+\begin{tabular}{L{7.5cm}L{7.5cm}}
+\includegraphics[width=7.5cm]{fig139802146751984.pdf}
+ & 
+\includegraphics[width=7.5cm]{fig139802146753520.pdf}
+ \\\end{tabular}
+
+\noindent
+\begin{tabular}{L{7.5cm}L{7.5cm}}
+\includegraphics[width=7.5cm]{fig139802146754000.pdf}
+ & 
+\includegraphics[width=7.5cm]{fig139802146754480.pdf}
+ \\\end{tabular}
+
+\end{bmcsexample}
+
+\end{document}
+        

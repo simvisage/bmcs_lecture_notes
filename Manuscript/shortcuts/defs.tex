@@ -1,0 +1,191 @@
+
+%
+% Reset the figure environment
+%
+\renewcommand{\topfraction}{.95}
+\renewcommand{\textfraction}{.05}
+\renewcommand{\floatpagefraction}{.95}
+
+\newcommand{\mbf}[1]{\mbox{\boldmath$#1$}}
+\font\mbff=cmbsy10\def\mbfx#1{\hbox{\mbff#1}}%\let\mbf\Mbff
+\newcommand{\divx}[2]{\mbox{$\displaystyle\frac{#1}{#2}$}}
+\newcommand{\parder}[2]{\divx{\partial {#1}}{\partial {#2}}}
+\newcommand{\ppd}[2]{\divx{\partial \,{#1}}{\partial \,{#2}}}
+%\newcommand{\dpd}[2]{\divx{\partial ^{2}\,{#1}}{\partial \,{#2}^{2}}}
+%\newcommand{\tpd}[2]{\divx{\partial ^{3}\,{#1}}{\partial \,{#2}^{3}}}
+\newcommand{\cpd}[2]{\divx{\partial ^{4}\,{#1}}{\partial \,{#2}^{4}}}
+\newcommand{\pardline}[2]{\partial {#1} / \partial {#2}}
+\newcommand{\pardat}[3]{\left. \divx{\partial \,{#1}}{\partial \,{#2}} \right|_{#3}}
+%\font\bff=cmssbx10
+\newfont{\bff}{cmssbx10 scaled 1150}
+\def\bfx#1{\hbox{\bff#1}}%\let\mbf\Bff
+\newcommand{\bfa}{\bfx}
+%\newcommand{\spd}[1]{\divx{\partial ^{3}\,{#1}}{\partial \,x\,\partial \,t^{2}}}
+%\newcommand{\scpd}[1]{\divx{\partial ^{4}\,{#1}}{\partial \,x^{2}\,\partial
+%\,t^{2}}}
+\newcommand{\der}[2]{\divx{\textrm{d} {#1}}{\textrm{d} {#2}}}
+\newcommand{\lder}[2]{#1_{,#2}}
+\newcommand{\dd}[2]{\divx{d ^2{#1}}{d {#2}^2}}
+\newcommand{\td}[2]{\divx{d ^3{#1}}{d {#2}^3}}
+\newcommand{\cd}[2]{\divx{d ^4{#1}}{d {#2}^4}}
+\newcommand{\vp}{\varphi}
+\newcommand{\MKP}{{MKP$\;\;$}}
+\newcommand{\inl}[2]{\mbox{$\displaystyle\int_{#1}^{#2}$}}
+\newcommand{\sul}[2]{\mbox{$\displaystyle\sum_{#1}^{#2}\,$}}
+\newcommand{\limit}[1]{\mbox{$\displaystyle\lim_{#1}$}}
+%\newcommand{\varPhi}{\Phi}
+%\newcommand{\varPsi}{\Psi}
+%
+% The following macros define uniform indexing semantics
+%
+\newcommand{\sol}[1]{#1_*}
+\newcommand{\const}[1]{#1_*}
+\newcommand{\init}[1]{#1^{*}}
+\newcommand{\incr}[1]{#1^{+}}
+\newcommand{\refr}[1]{#1^{R}}
+\newcommand{\normalize}[1]{\left\Vert #1 \right\Vert}
+\newcommand{\range}[1]{#1^{\mbox{\scriptsize lim}}}
+\newcommand{\apprx}[1]{#1_{\mbox{\scriptsize a}}}
+\newcommand{\DefinedAs}{\stackrel{\mathrm{\tiny def}}{=}}
+
+\usepackage{mathrsfs}
+\usepackage{mathbbol}
+\newcommand{\JumpOp}[2]{\mathbb{\Lbrack}#1\mathbb{\Rbrack}_{#2}}
+\newcommand{\JumpRefField}{\JumpOp{\uref}{\xi}}
+
+\newcommand{\DiracFn}[1]{\mathscr{D}\left(#1\right)}
+\newcommand{\HeavisideFn}[1]{\mathscr{H}\left(#1\right)}
+%symbols for variational problem
+\newcommand{\Domain}{\Omega}
+\newcommand{\DiffOp}{\mathscr{L}}
+\newcommand{\MaxShear}{\tau}
+\newcommand{\imatrix}{\mathrm{m}}
+\newcommand{\ifilam}{\mathrm{f}}
+\newcommand{\diff}{\,\textrm{d}}
+\newcommand{\DisplTestFn}{\mbf{u}}
+\newcommand{\DisplTrialFn}{\mbf{v}}
+\newcommand{\MaterialMatrix}{\mbf{D}}
+\newcommand{\IntForce}{\mbf{F}^{\mathrm{int}}}
+\newcommand{\ExtForce}{\mbf{F}^{\mathrm{ext}}}
+
+\newcommand{\wref}{\bar{w}}
+\newcommand{\wmtx}{w'_\imatrix}
+\newcommand{\wfil}{w'_\ifilam}
+\newcommand{\uref}{\bar{u}}
+\newcommand{\umtx}{u'_\imatrix}
+\newcommand{\ufil}{u'_\ifilam}
+\newcommand{\AOp}[4]{a^{#1}\left( #2, #3 \right)_{#4}}
+\newcommand{\SpaceRef}{\bar{\mathcal{V}}}
+\newcommand{\SpaceMtx}{\mathcal{V}_\imatrix}
+\newcommand{\SpaceFil}{\mathcal{V}_\ifilam}
+
+\newcommand{\urefdof}{\hat{\mbf{u}}}
+%\newcommand{\wrefdof}{\hat{\mbf{u}}}
+
+\newcommand{\SigmaM}{\sigma_\imatrix}
+\newcommand{\SigmaF}{\sigma_\ifilam}
+\newcommand{\ISigmaM}{\Delta\sigma^m}
+\newcommand{\ISigmaF}{\Delta\sigma^f}
+
+\newcommand{\Nlambda}{\mbf{N}_\lambda}
+
+
+\usepackage{color}
+%%%%%%%%%%%%%%%%%%%% REVIEWING MODUS %%%%%%%%%%%%%%%%%
+\oddsidemargin=-1cm\textwidth=16cm\marginparwidth=2cm
+\newcounter{rchremark}
+\newcommand{\rch}[1] {\stepcounter{rchremark}  {\color{red}$^{R\therchremark} $\marginpar{\color{red}\scriptsize {  \sf [{\em R\therchremark:}] #1}}\color{black}}}
+
+\newcounter{saeedremark}
+\newcommand{\saeed}[1] {\stepcounter{saeedremark}  {\color{blue}$^{S\thesaeedremark} $\marginpar{\color{blue}\scriptsize {      \sf [{\em S\thesaeedremark:}] #1}}\color{black}}}
+
+\newcommand{\stext}[1] {\stepcounter{saeedremark}  {\color{blue}$^{S\thesaeedremark} ${\color{blue}\scriptsize {      \sf [{\em S\thesaeedremark:}] #1}}\color{black}}}
+%%%%%%%%%%%%%%%%%%%% FINAL MODUS %%%%%%%%%%%%%%%%%
+
+% Rostia / MVF
+\newcommand{\DomainInteg}[2]{\left( #1, #2 \right)_\Domain}
+\newcommand{\BCInteg}[3]{\left( #1, #2 \right)_{\Gamma_{{#3}}}}
+\newcommand{\fc}[1]{\color{blue}#1\color{black}}
+\newcommand{\bc}[1]{\color{red}#1\color{black}}
+\newcommand{\heaviside}{\mathbb{H}}
+\newcommand{\dirac}{\mathbb{D}}
+%\definecolor{darkgreen}{rgb}{0.0,0.5,0.0}
+
+%class names, methods, code
+% \newcommand{\clname}[1]{\texttt{#1}}
+% \newcommand{\method}[1]{\texttt{#1}}
+% \newcommand{\attrib}[1]{\texttt{#1}}
+\newcommand{\clname}[1]{\textsf{#1}}
+\newcommand{\method}[1]{\textsf{#1}}
+\newcommand{\attrib}[1]{\textsf{#1}}
+
+\newcommand{\eqnsep}{ \vspace*{1mm} }
+\newcommand{\SIGN}{\mathrm{sign}}
+\newcommand{\vct}{\mathbf{v}}
+
+\newcommand{\epsm}{\varepsilon_\mathrm{m}}
+\newcommand{\um}{u_\mathrm{m}}
+\newcommand{\Em}{E_\mathrm{m}}
+\newcommand{\Vm}{V_\mathrm{m}}
+\newcommand{\Am}{A_\mathrm{m}}
+\newcommand{\sigmamu}{\sigma_\mathrm{mu}}
+\newcommand{\sigmam}{\sigma_\mathrm{m}}
+\newcommand{\mm}{m_\mathrm{m}}
+\newcommand{\sm}{s_\mathrm{m}}
+\newcommand{\lacor}{\ell_\rho}
+% fibers
+\newcommand{\ls}{\delta_\mathrm{c}} %stress transfer length
+\newcommand{\Vf}{V_\mathrm{f}} %fiber volume fraction
+\newcommand{\epsfmax}{\varepsilon_{\mathrm{f0},\mathbf{X}}}
+\newcommand{\epsfzero}{\varepsilon_{\mathrm{f0}}}
+\newcommand{\epsfmaxinf}{\varepsilon_{\mathrm{f0},r \tau}}
+\newcommand{\epsfmaxfin}{\varepsilon_{\mathrm{f0},\tau r \xi}}
+\newcommand{\epsf}{\varepsilon_{\mathrm{f},\mathbf{X}}}
+\newcommand{\muepsf}{\mu_{\varepsilon_\mathrm{f}}}
+\newcommand{\musigmac}{\mu_{\sigma_\mathrm{c}}}
+\newcommand{\epsfprime}{\varepsilon_{\mathrm{f},\mathbf{X}}^\prime}
+\newcommand{\Ef}{E_\mathrm{f}}
+\newcommand{\nuf}{\nu_\mathrm{f}}
+\newcommand{\rf}{r}
+\newcommand{\Gxi}{G_\xi}
+\newcommand{\Aftot}{A_\mathrm{f,tot}}
+%fiber stress per length
+\newcommand{\T}{T}
+\newcommand{\Tz}{T_z}
+\newcommand{\Tzxi}{T_{z\,\xi}}
+% Weibull distribution
+\newcommand{\mxi}{m_\mathrm{f}}
+\newcommand{\mtau}{m_\tau}
+\newcommand{\stau}{s_\tau}
+\newcommand{\ltau}{l_\tau}
+\newcommand{\s}{\varepsilon_0}
+\newcommand{\sxi}{s_\mathrm{f}}
+%composite
+\newcommand{\lm}{\ell_\mathrm{CS}}
+\newcommand{\Ac}{A_\mathrm{c}}
+\newcommand{\Ec}{E_\mathrm{c}}
+\newcommand{\epsc}{\varepsilon_\mathrm{c}}
+%general
+\newcommand{\Isigmam}{34}
+\newcommand{\Imusigmac}{2}
+\newcommand{\CMOD}{w}
+\newcommand{\displ}{u}
+\newcommand{\Lmax}{L_\mathrm{\uparrow}}
+\newcommand{\Lmin}{L_\mathrm{\downarrow}}
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\X}{\mathbf{X}}
+\newcommand{\Lc}{L_\mathrm{c}}
+\newcommand{\vecttau}{\mathbf{\Theta}_{\tau}}
+\newcommand{\vectxi}{\mathbf{\Theta}_{\xi}}
+\newcommand{\vectsigmamu}{\mathbf{\Theta}_{\mathrm{m}}}
+\newcommand{\vecttausolved}{\hat{\mathbf{\Theta}}_{\tau}}
+\newcommand{\vectxisolved}{\hat{\mathbf{\Theta}}_{\xi}}
+\newcommand{\vectsigmamusolved}{\hat{\mathbf{\Theta}}_{\mathrm{m}}}
+\newcommand{\hypers}{\hat{\mathbf{\Theta}}_{\tau,\xi,\sigma_\mathrm{mu}}}
+\newcommand{\params}{\mathbf{\Theta}_\mathrm{CB}}
+\newcommand{\sigmamumin}{\sigma_\mathrm{mu}^\mathrm{min}}
+\newcommand{\sigmamuminmean}{\bar\sigma_\mathrm{mu}^\mathrm{min}}
+
+
+%load in terms of composite stress F/Ac
+\newcommand{\load}{\sigma_\mathrm{c}}

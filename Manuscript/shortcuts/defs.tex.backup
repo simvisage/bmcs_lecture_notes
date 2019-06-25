@@ -1,0 +1,100 @@
+
+%
+% Reset the figure environment
+%
+\renewcommand{\topfraction}{.95}
+\renewcommand{\textfraction}{.05}
+\renewcommand{\floatpagefraction}{.95}
+
+\newcommand{\mbf}[1]{\mbox{\boldmath$#1$}}
+\font\mbff=cmbsy10\def\mbfx#1{\hbox{\mbff#1}}%\let\mbf\Mbff
+\newcommand{\del}[2]{\mbox{$\displaystyle\frac{#1}{#2}$}}
+\newcommand{\pard}[2]{\del{\partial {#1}}{\partial {#2}}}
+\newcommand{\ppd}[2]{\del{\partial \,{#1}}{\partial \,{#2}}}
+\newcommand{\dpd}[2]{\del{\partial ^{2}\,{#1}}{\partial \,{#2}^{2}}}
+\newcommand{\tpd}[2]{\del{\partial ^{3}\,{#1}}{\partial \,{#2}^{3}}}
+\newcommand{\cpd}[2]{\del{\partial ^{4}\,{#1}}{\partial \,{#2}^{4}}}
+\newcommand{\pardline}[2]{\partial {#1} / \partial {#2}}
+\newcommand{\pardat}[3]{\left. \del{\partial \,{#1}}{\partial \,{#2}} \right|_{#3}}
+%\font\bff=cmssbx10
+\newfont{\bff}{cmssbx10 scaled 1150}
+\def\bfx#1{\hbox{\bff#1}}%\let\mbf\Bff
+\newcommand{\bfa}{\bfx}
+%\newcommand{\spd}[1]{\del{\partial ^{3}\,{#1}}{\partial \,x\,\partial \,t^{2}}}
+%\newcommand{\scpd}[1]{\del{\partial ^{4}\,{#1}}{\partial \,x^{2}\,\partial
+%\,t^{2}}}
+\newcommand{\der}[2]{\del{\textrm{d} {#1}}{\textrm{d} {#2}}}
+\newcommand{\lder}[2]{#1_{,#2}}
+\newcommand{\dd}[2]{\del{d ^2{#1}}{d {#2}^2}}
+\newcommand{\td}[2]{\del{d ^3{#1}}{d {#2}^3}}
+\newcommand{\cd}[2]{\del{d ^4{#1}}{d {#2}^4}}
+\newcommand{\vp}{\varphi}
+\newcommand{\MKP}{{MKP$\;\;$}}
+\newcommand{\inl}[2]{\mbox{$\displaystyle\int_{#1}^{#2}$}}
+\newcommand{\sul}[2]{\mbox{$\displaystyle\sum_{#1}^{#2}\,$}}
+\newcommand{\limit}[1]{\mbox{$\displaystyle\lim_{#1}$}}
+%\newcommand{\varPhi}{\Phi}
+%\newcommand{\varPsi}{\Psi}
+%
+% The following macros define uniform indexing semantics
+%
+\newcommand{\sol}[1]{#1_*}
+\newcommand{\const}[1]{#1_*}
+\newcommand{\init}[1]{#1^{*}}
+\newcommand{\incr}[1]{#1^{+}}
+\newcommand{\refr}[1]{#1^{R}}
+\newcommand{\normalize}[1]{\left\Vert #1 \right\Vert}
+\newcommand{\range}[1]{#1^{\mbox{\scriptsize lim}}}
+\newcommand{\apprx}[1]{#1_{\mbox{\scriptsize a}}}
+\newcommand{\DefinedAs}{\stackrel{\mathrm{\tiny def}}{=}}
+
+\usepackage{mathrsfs}
+\usepackage{mathbbol}
+\newcommand{\JumpOp}[2]{\mathbb{\Lbrack}#1\mathbb{\Rbrack}_{#2}}
+\newcommand{\JumpRefField}{\JumpOp{\uref}{\xi}}
+
+\newcommand{\DiracFn}[1]{\mathscr{D}\left(#1\right)}
+\newcommand{\HeavisideFn}[1]{\mathscr{H}\left(#1\right)}
+%symbols for variational problem
+\newcommand{\Domain}{\Omega}
+\newcommand{\DiffOp}{\mathscr{L}}
+\newcommand{\MaxShear}{\tau}
+\newcommand{\imatrix}{m}
+\newcommand{\ifilam}{f}
+\newcommand{\diff}{\,\textrm{d}}
+\newcommand{\DisplTestFn}{\mbf{u}}
+\newcommand{\DisplTrialFn}{\mbf{v}}
+\newcommand{\MaterialMatrix}{\mbf{D}}
+\newcommand{\IntForce}{\mbf{F}^{\mathrm{int}}}
+\newcommand{\ExtForce}{\mbf{F}^{\mathrm{ext}}}
+
+\newcommand{\wref}{\bar{w}}
+\newcommand{\wmtx}{w'_\imatrix}
+\newcommand{\wfil}{w'_\ifilam}
+\newcommand{\uref}{\bar{u}}
+\newcommand{\umtx}{u'_\imatrix}
+\newcommand{\ufil}{u'_\ifilam}
+\newcommand{\AOp}[4]{a^{#1}\left( #2, #3 \right)_{#4}}
+\newcommand{\SpaceRef}{\bar{\mathcal{V}}}
+\newcommand{\SpaceMtx}{\mathcal{V}_\imatrix}
+\newcommand{\SpaceFil}{\mathcal{V}_\ifilam}
+\newcommand{\textsave}[1]{}
+
+\newcommand{\urefdof}{\hat{\mbf{u}}}
+%\newcommand{\wrefdof}{\hat{\mbf{u}}}
+
+\newcommand{\SigmaM}{\sigma_\imatrix}
+\newcommand{\SigmaF}{\sigma_\ifilam}
+\newcommand{\ISigmaM}{\Delta\sigma^m}
+\newcommand{\ISigmaF}{\Delta\sigma^f}
+
+\newcommand{\Nlambda}{\mbf{N}_\lambda}
+
+
+\usepackage{color}
+%%%%%%%%%%%%%%%%%%%% REVIEWING MODUS %%%%%%%%%%%%%%%%%
+\newcounter{rchremark}\newcounter{mirekremark}
+\oddsidemargin=-1cm\textwidth=16cm\marginparwidth=2cm
+\newcommand{\mirek}[1] {\stepcounter{mirekremark} {\color{blue}$^{M\themirekremark}  $\marginpar{\color{blue}\scriptsize{ \sf [{\em M\themirekremark:}]      #1}}\color{black}}}
+\newcommand{\rch}[1] {\stepcounter{rchremark}  {\color{red}$^{R\therchremark} $\marginpar{\color{red}\scriptsize {      \sf [{\em R\therchremark:}] #1}}\color{black}}}
+%%%%%%%%%%%%%%%%%%%% FINAL MODUS %%%%%%%%%%%%%%%%%

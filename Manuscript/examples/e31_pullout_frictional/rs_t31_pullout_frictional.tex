@@ -1,0 +1,50 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+
+\begin{bmcsexample}[Pullout with frictional bond]
+\noindent Analytic solution of the bond with constant shear
+    bond law is demonstrated showing the shear flow, slip and strain
+    along the fiber at a marked state.
+ \\[3mm]
+\begin{center}
+\begin{tabular}{lrp{4cm}}\hline
+Model parameter & Symbol = Value [Unit] & Description  \\\hline \hline
+n\_steps & None = 100 [None] & {\footnotesize None}  \\
+            w\_max & None = 1.5 [None] & {\footnotesize None}  \\
+            \hline
+\multicolumn{3}{l}{geometry : Geometry}\\ \hline
+
+L\_x & None = 800.0 [None] & {\footnotesize embedded length}  \\
+            \hline
+\multicolumn{3}{l}{cross\_section : CrossSection}\\ \hline
+
+A\_f & None = 153.9 [None] & {\footnotesize reinforcement area [mm2]}  \\
+            A\_m & None = 15240 [None] & {\footnotesize matrix area [mm2]}  \\
+            \hline
+\multicolumn{3}{l}{material : MaterialParams}\\ \hline
+
+tau\_pi\_bar & $\bar{\tau}$ = 4.5 [$\mathrm{MPa}$] & {\footnotesize Frictional bond strength}  \\
+            E\_f & $E_\mathrm{f}$ = 240000 [$\mathrm{MPa}$] & {\footnotesize Reinforcement stiffness}  \\
+            \hline \end{tabular}
+
+
+\end{center}
+
+\noindent
+\begin{tabular}{L{7.5cm}L{7.5cm}}
+\includegraphics[width=7.5cm]{examples/t31_pullout_frictional/fig140069904392752.pdf}
+ & 
+\includegraphics[width=7.5cm]{examples/t31_pullout_frictional/fig140069904394288.pdf}
+ \\\end{tabular}
+
+\noindent
+\begin{tabular}{L{7.5cm}L{7.5cm}}
+\includegraphics[width=7.5cm]{examples/t31_pullout_frictional/fig140069904394576.pdf}
+ & 
+\includegraphics[width=7.5cm]{examples/t31_pullout_frictional/fig140069904394864.pdf}
+ \\\end{tabular}
+
+\end{bmcsexample}
+
+\end{document}
+        

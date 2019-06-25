@@ -1,0 +1,142 @@
+\select@language {UKenglish}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {UKenglish}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 1.1}{\ignorespaces Examples of considered brittle-matrix composites\relax }}{9}{figure.caption.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 1.2}{\ignorespaces Examples of textile-reinforced concrete shells\relax }}{11}{figure.caption.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 1.3}{\ignorespaces TRC bridge, Albstadt\relax }}{11}{figure.caption.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 1.4}{\ignorespaces Examples of material parameters of textile-fabrics reinforcement\relax }}{13}{figure.caption.7}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces RILEM pull-out test to characterize the bond between steel and concrete.\relax }}{16}{figure.caption.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Pullout of GFRP bar from the concrete matrix.\relax }}{16}{figure.caption.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces Beam tests focused on the bond characterization.\relax }}{17}{figure.caption.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Double sided pullout test applied to carbon textile fabrics.\relax }}{17}{figure.caption.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces Double sided pullout test for a single fiber with a predefined pullout length at one side using a cut at one side.\relax }}{18}{figure.caption.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces Relation between material behavior and structural behavior\relax }}{19}{figure.caption.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.7}{\ignorespaces One dimensional idealization of the pullout test as boundary value problem\relax }}{20}{figure.caption.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.8}{\ignorespaces Assumptions included in the pullout-model with constant bond stress\relax }}{21}{figure.caption.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.9}{\ignorespaces Variables and parameters describing the constant bond model\relax }}{21}{figure.caption.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.10}{\ignorespaces Profile of strains in the pullout-model with constant bond stress; a) Matrix supported at loaded end, b) Matrix supported at unloaded end\relax }}{25}{figure.caption.30}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Structural interpretation of bond hardening and softening\relax }}{28}{figure.caption.38}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Prediction of the constant bond model\relax }}{32}{figure.caption.43}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Length dependence\relax }}{32}{figure.caption.44}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Linear finite elements applied in the BMCS tool suite.\relax }}{34}{figure.caption.48}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Nonlinear time stepping procedure following the Newton algorithm.\relax }}{36}{figure.caption.49}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Double-sided pullout test with several unloading and reloading steps\relax }}{38}{figure.caption.52}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Bond governed by damage\relax }}{39}{figure.caption.54}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Bond governed by plasticity/friction\relax }}{39}{figure.caption.55}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Damage function governing the deterioration process\relax }}{40}{figure.caption.56}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Slip - bond stress curve of damage model; left : hardening, right: softening\relax }}{41}{figure.caption.57}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces What happens beyond elastic domain? Example of elastic-ideally plastic bond.\relax }}{46}{figure.caption.59}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 4.7}{\ignorespaces Return mapping of the plasticity model\relax }}{46}{figure.caption.60}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Energy bilance for the pullout with constant bond-slip law\relax }}{55}{figure.caption.66}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces Finite-element computation of with a softening zone\relax }}{57}{figure.caption.70}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 8.1}{\ignorespaces Material with linear softening.\relax }}{63}{figure.caption.76}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 8.2}{\ignorespaces Example of a tension bar with a softening zone of a finite size.\relax }}{68}{figure.caption.78}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 9.1}{\ignorespaces Geometry and boundary donditions of the three-point bending test.\relax }}{70}{figure.caption.79}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 9.2}{\ignorespaces Finite element disretization used for the verification of mesh-independency of the numerical model.\relax }}{70}{figure.caption.81}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 9.3}{\ignorespaces Fracture energy dissipation including the self-weight.\relax }}{71}{figure.caption.84}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 9.4}{\ignorespaces (a) Dimensions of notched three-point-bending test series by Petersson, loading and boundary condition; (b) finite element descritization; (c) damage propagation; (d) load-displacement curves from test and simulations with fracture energy $G_\mathrm {f} = 124\tmspace +\thinmuskip {.1667em}\mathrm {N/mm}$; (e) range of load-displacement curves from test and simulations with variation of fracture energy $0.115\tmspace +\thinmuskip {.1667em}\mathrm {N/mm} \leq G_\mathrm {f} \leq 0.137\tmspace +\thinmuskip {.1667em}\mathrm {N/mm}$\relax }}{73}{figure.caption.89}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 11.1}{\ignorespaces Fracture modes 1,2 and 3: opening crack, shearing crack and tearing crack\relax }}{81}{figure.caption.98}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 11.2}{\ignorespaces (a) Test setup and dimensions of the Nooru-Mohamed tests; (b) loading history of horizontal force $F_\mathrm {s}$; (c) loading history of vertical force $F$\relax }}{82}{figure.caption.99}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 11.3}{\ignorespaces (a) Crack pattern of Nooru-Mohamed test: (a) load path 4a; (b) load path 4b\relax }}{83}{figure.caption.100}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 11.4}{\ignorespaces Tensile response of Microplane damage model (MDM) and Concrete damage plasticity (CDP) calibrated for the simulation of Nooru-Mohamed tests\relax }}{84}{figure.caption.103}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 11.5}{\ignorespaces Comparison of the crack pattern in Nooru-Mohamed test (load paths 4a and 4b) with damage evolution from the model with biquadratic elements with $2.5\tmspace +\thinmuskip {.1667em}\mathrm {mm} \times 2.5\tmspace +\thinmuskip {.1667em}\mathrm {mm}$ mesh size and reduced integration schemes using \textit {concrete damage plasticity} model\relax }}{84}{figure.caption.104}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 11.6}{\ignorespaces Load-displacment curves of the Nooru-Mohamed test from test and finite element simulation using \textit {concrete damage plasticity} model (a) load path 4a; (b) load path 4b\relax }}{85}{figure.caption.105}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 11.7}{\ignorespaces Decomposition of strain components in a material point in 2D stress state.\relax }}{85}{figure.caption.106}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 11.8}{\ignorespaces Example of damage evolution in a material point loaded in uniaxial tension.\relax }}{86}{figure.caption.107}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 11.9}{\ignorespaces Damage envelope calculated for the microplane-damage model.\relax }}{87}{figure.caption.108}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 11.10}{\ignorespaces Load-displacment curves of the Nooru-Mohamed test from test and finite element simulation using \textit {microplane damage model} (a) load path 4a; (b) load path 4b\relax }}{88}{figure.caption.109}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 11.11}{\ignorespaces Load-displacment curves of the Nooru-Mohamed test from test and finite element simulation using \textit {microplane damage model} (a) load path 4a; (b) load path 4b\relax }}{88}{figure.caption.110}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 11.12}{\ignorespaces Willam test illustration\relax }}{89}{figure.caption.111}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 11.13}{\ignorespaces Willam-test, $\sigma _{xx}, \sigma _{yy}, \sigma _{xy}$ versus $\varepsilon _{xx}$\relax }}{89}{figure.caption.112}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 11.14}{\ignorespaces Willam-test, evolution of directions of principal stress $\sigma _{11}$ and strains $\varepsilon _{11}$\relax }}{90}{figure.caption.113}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 11.15}{\ignorespaces Willam-test, evolution of principal stresses\relax }}{90}{figure.caption.114}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 12.1}{\ignorespaces Tensile response of a composite specimen, random, deterministic matrix\relax }}{94}{figure.caption.116}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 12.2}{\ignorespaces Stress and strain state of a single crack bridge with constant bond\relax }}{94}{figure.caption.117}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 12.3}{\ignorespaces Stress and strain state along the tensile specimen at increasing remote stress levels\relax }}{95}{figure.caption.118}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Schematic picture of a typical pull-out test\relax }}{98}{figure.caption.120}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax A.2}{\ignorespaces A simplified mechanical model of the pull-out problem\relax }}{98}{figure.caption.121}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }

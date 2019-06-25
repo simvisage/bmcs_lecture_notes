@@ -1,0 +1,63 @@
+\BOOKMARK [0][-]{toc.0}{Contents}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{List of Figures}{}% 2
+\BOOKMARK [0][-]{chapter.1}{1 Introduction}{}% 3
+\BOOKMARK [1][-]{section.1.1}{1.1 What is this course about?}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{1.2 Scope and structure of the course}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.3}{1.3 Example applications of cementitious composites}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.4}{1.4 BMCS Tool Suite}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.5}{1.5 Warm-up exercises}{chapter.1}% 8
+\BOOKMARK [-1][-]{part.1}{I Debonding}{}% 9
+\BOOKMARK [0][-]{chapter.2}{2 Pull-Out}{part.1}% 10
+\BOOKMARK [1][-]{section.2.1}{2.1 Pullout test setup}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.2}{2.2 Objectivity of a material model}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.3}{2.3 Analytically solvable pullout problems}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.4}{2.4 Conclusions and remarks}{chapter.2}% 14
+\BOOKMARK [0][-]{chapter.3}{3 Bond behavior}{part.1}% 15
+\BOOKMARK [1][-]{section.3.1}{3.1 Generally nonlinear bond-slip law}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.2}{3.2 Bond-slip law with hardening}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.3}{3.3 Pullout problem for bond slip law with softening}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.4}{3.4 Finite element solution of the pullout problem}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.5}{3.5 Iterative solver for a general non-linear finite element simulation}{chapter.3}% 20
+\BOOKMARK [0][-]{chapter.4}{4 Unloading and Reloading}{part.1}% 21
+\BOOKMARK [1][-]{section.4.1}{4.1 Experimental observation}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.2}{4.2 Phenomenology of the bond behavior}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.3}{4.3 Damage model}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.4}{4.4 Plasticity model}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.5}{4.5 Return mapping algorithm}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.6}{4.6 Damage-Plasticity model}{chapter.4}% 27
+\BOOKMARK [0][-]{chapter.5}{5 Inelastic analysis of pull-out response}{part.1}% 28
+\BOOKMARK [1][-]{section.5.1}{5.1 Pullout governed by plasticity}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.2}{5.2 Pullout governed by damage}{chapter.5}% 30
+\BOOKMARK [-1][-]{part.2}{II Cracking}{}% 31
+\BOOKMARK [0][-]{chapter.6}{6 Softening and fracture}{part.2}% 32
+\BOOKMARK [1][-]{section.6.1}{6.1 Is energy dissipation an objective material property?}{chapter.6}% 33
+\BOOKMARK [1][-]{section.6.2}{6.2 Energetic interpretation of the nonlinear structural response}{chapter.6}% 34
+\BOOKMARK [1][-]{section.6.3}{6.3 General formula for energy supply}{chapter.6}% 35
+\BOOKMARK [0][-]{chapter.7}{7 Cohesive zone, softening, energy dissipation}{part.2}% 36
+\BOOKMARK [1][-]{section.7.1}{7.1 Sensitivity of strain-softening models with respect to size of the localization zone}{chapter.7}% 37
+\BOOKMARK [1][-]{section.7.2}{7.2 Softening function accounting for fracture energy}{chapter.7}% 38
+\BOOKMARK [1][-]{section.7.3}{7.3 Energy dissipation for strain softening}{chapter.7}% 39
+\BOOKMARK [1][-]{section.7.4}{7.4 Correspondence between softening and damage functions}{chapter.7}% 40
+\BOOKMARK [0][-]{chapter.8}{8 Softening and finite elements}{part.2}% 41
+\BOOKMARK [1][-]{section.8.1}{8.1 Effect of element size on the strain localization for linear softening law}{chapter.8}% 42
+\BOOKMARK [1][-]{section.8.2}{8.2 Regularization of the softening law in finite element code}{chapter.8}% 43
+\BOOKMARK [1][-]{section.8.3}{8.3 Implementation of softening in finite-element codes}{chapter.8}% 44
+\BOOKMARK [1][-]{section.8.4}{8.4 Implementation of softening behavior in finite element code}{chapter.8}% 45
+\BOOKMARK [0][-]{chapter.9}{9 Crack propagation}{part.2}% 46
+\BOOKMARK [1][-]{section.9.1}{9.1 Propagation of a straight crack}{chapter.9}% 47
+\BOOKMARK [1][-]{section.9.2}{9.2 Petersen three-point bending test series}{chapter.9}% 48
+\BOOKMARK [1][-]{section.9.3}{9.3 Onset of damage}{chapter.9}% 49
+\BOOKMARK [0][-]{chapter.10}{10 Onset of inelasticity in a continuum}{part.2}% 50
+\BOOKMARK [1][-]{section.10.1}{10.1 Representation of strain and strain in a continuum}{chapter.10}% 51
+\BOOKMARK [1][-]{section.10.2}{10.2 Examples of yield conditions}{chapter.10}% 52
+\BOOKMARK [0][-]{chapter.11}{11 Shear \046 Crack}{part.2}% 53
+\BOOKMARK [1][-]{section.11.1}{11.1 Double-edge notched test}{chapter.11}% 54
+\BOOKMARK [1][-]{section.11.2}{11.2 Elementary tests of material models for concrete cracking}{chapter.11}% 55
+\BOOKMARK [1][-]{section.11.3}{11.3 Examples}{chapter.11}% 56
+\BOOKMARK [-1][-]{part.3}{III Cracking \046 Debonding}{}% 57
+\BOOKMARK [0][-]{chapter.12}{12 Tensile response of brittle-matrix composites}{part.3}% 58
+\BOOKMARK [1][-]{section.12.1}{12.1 Pseudo-ductility}{chapter.12}% 59
+\BOOKMARK [0][-]{chapter.13}{13 Influence of heterogeneity}{part.3}% 60
+\BOOKMARK [0][-]{chapter.14}{14 Shear loading}{part.3}% 61
+\BOOKMARK [0][-]{appendix.A}{A Multilayer model}{part.3}% 62
+\BOOKMARK [1][-]{section.A.1}{A.1 Governing equations}{appendix.A}% 63

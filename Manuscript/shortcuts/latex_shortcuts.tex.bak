@@ -1,0 +1,220 @@
+%%% Own latex-shortcut definitions for: Diplomarbeit-femple
+
+% --- allemande Abderhalden von hauling unrecommended Vocables und Named mit blunderer Formatierung: ----------------------------------------------------------------
+\newcommand{\eg}{\mbox{e.$\,$g. }}              % Shortcut for:  e. g. with a small space in between (z.B.)
+\newcommand{\ie}{\mbox{i.$\,$e. }}              % Shortcut for:  i. e. with a small space in between (d.h.)
+\newcommand{\fe}{femple }                       % Shortcut for: femple (emphasized, with quotes)
+\newcommand{\qfeq}{\textsl{femple} }     % Shortcut for: "femple"-package (emphasized package-name with quotes)
+\newcommand{\qfe}{\textsl{femple}}     % Shortcut for: "femple"-package (emphasized package-name with quotes)
+\newcommand{\qfepa}{\textsl{femple}-package}     % Shortcut for: "femple"-package (emphasized package-name with quotes)
+\newcommand{\qfepaq}{\textsl{femple}-package }     % Shortcut for: "femple"-package (emphasized package-name with quotes)
+\newcommand{\pa}{package }                            % shortcut for: package
+\newcommand{\pr}{procedure }                          % shortcut for: procedure
+\newcommand{\prs}{procedures }                        % shortcut for: procedures
+\newcommand{\prd}{procedure definition }              % shortcut for: procedure definition
+
+% --- Note: brand names don't have carry a blank space behind them. Use \(space) instead
+\newcommand{\MA}{\textsc{Maple}}              % Shortcut for: MAPLE (slanted)
+\newcommand{\MAT}{\textsc{Matlab}}              % Shortcut for: MATLAB (slanted)
+\newcommand{\qfeXXq}{\textsl{femple-8-8} }                % Shortcut for: "femple" (italic, with quotes)
+\newcommand{\qfeXX}{\textsl{femple-8-8}}                % Shortcut for: "femple" (italic, with quotes)
+
+% --- "femple"-procedures: -----------------------------------------------------------------------------
+% --- ohne Leerzeichen am Ende
+% --- arguments
+\newcommand{\qXloc}{\textsl{X\_loc}}
+\newcommand{\qrs}{\textsl{rset}}
+\newcommand{\qss}{\textsl{sset}}
+\newcommand{\qts}{\textsl{tset}}
+\newcommand{\qrsts}{\textsl{rset, sset} and \textsl{tset}}
+\newcommand{\qXrst}{\textsl{X\_rst}}
+\newcommand{\qNc}{\textsl{N\_c}}
+\newcommand{\qNm}{\textsl{N\_m}}
+\newcommand{\qNi}{\textsl{N\_i}}
+\newcommand{\qNcmi}{\textsl{N\_cmi}}
+\newcommand{\qNvct}{\textsl{N\_vct}}
+\newcommand{\qNmtxgeo}{\textsl{N\_mtx\_geo}}
+\newcommand{\qNmtx}{\textsl{N\_mtx}}
+\newcommand{\qvvct}{\textsl{v\_vct}}
+\newcommand{\qvvctq}{\textsl{v\_vct} }
+\newcommand{\qM}{\textsl{M}}
+\newcommand{\qJmtx}{\textsl{J\_mtx}}
+\newcommand{\qBmtx}{\textsl{B\_mtx}}
+\newcommand{\qCmtx}{\textsl{C\_mtx}}
+\newcommand{\qKmtx}{\textsl{K\_mtx}}
+\newcommand{\qXglb}{\textsl{X\_glb}}
+\newcommand{\qKsys}{\textsl{K\_sys}}
+\newcommand{\qPsys}{\textsl{P\_sys}}
+\newcommand{\qsampleelem}{\textsl{sample\_elem}}          % Shortcut for procname: gen_p_loc
+\newcommand{\qJinv}{\textsl{J\_inv}}          % Shortcut for procname: gen_p_loc
+\newcommand{\qdiffop}{\textsl{diff\_op}}          % Shortcut for procname: gen_p_loc
+\newcommand{\qDmtx}{\textsl{D\_mtx}}          % Shortcut for procname: gen_p_loc
+\newcommand{\qPvct}{\textsl{P\_vct}}          % Shortcut for procname: gen_p_loc
+\newcommand{\qnint}{\textsl{n\_int}}          % Shortcut for procname: gen_p_loc
+\newcommand{\qnintline}{\textsl{n\_int\_line}}          % Shortcut for procname: gen_p_loc
+\newcommand{\qnintarea}{\textsl{n\_int\_area}}          % Shortcut for procname: gen_p_loc
+\newcommand{\qnintbody}{\textsl{n\_int\_body}}          % Shortcut for procname: gen_p_loc
+\newcommand{\qldl}{\textsl{line\_def\_loc}}            % Shortcut for procname: gen_p_loc
+\newcommand{\qadl}{\textsl{area\_def\_loc}}            % Shortcut for procname: gen_p_loc
+\newcommand{\qsystemdata}{\textsl{system\_data}}            % Shortcut for procname: gen_p_loc
+
+% --- procedures
+\newcommand{\qgNv}{\textsl{gen\_N\_vct}}          % Shortcut for procname: "gen_N_vct" (italic, with quotes)
+\newcommand{\qgetNv}{\textsl{get\_N\_vct}}          % Shortcut for procname: "gen_N_vct" (italic, with quotes)
+%---ungewandelt in "get" Prozeduren
+\newcommand{\qghsfr}{\textsl{get\_hsf\_rectangle}} % Shortcut for procname: "gen_hsf_rectangle" (italic, with quotes)
+\newcommand{\qghsft}{\textsl{get\_hsf\_triangle}}  % Shortcut for procname: "gen_hsf_triangle" (italic, with quotes)
+\newcommand{\qglsfr}{\textsl{get\_lsf\_rectangle}} % Shortcut for procname: "gen_lsf_rectangle" (italic, with quotes)
+\newcommand{\qglsft}{\textsl{get\_lsf\_triangle}}  % Shortcut for procname: "gen_lsf_tritangle" (italic, with quotes)
+\newcommand{\qggm}{\textsl{get\_gauss\_mtx}}          % Shortcut for procname: gen_p_loc
+%---
+\newcommand{\qcmir}{\textsl{c\_m\_i\_rectangle}}   % Shortcut for procname: "c_m_i_rectangle" (italic, with quotes)
+\newcommand{\qcmit}{\textsl{c\_m\_i\_triangle}}    % Shortcut for procname: "c_m_i_tritangle" (italic, with quotes)
+\newcommand{\qgNm}{\textsl{gen\_N\_mtx}}          % Shortcut for procname: "gen_N_mtx" (italic, with quotes)
+\newcommand{\qgetNm}{\textsl{get\_N\_mtx}}          % Shortcut for procname: "gen_N_mtx" (italic, with quotes)
+\newcommand{\qgJm}{\textsl{gen\_J\_mtx}}          % Shortcut for procname: "gen_J_mtx" (italic, with quotes)
+\newcommand{\qgetJm}{\textsl{get\_J\_mtx}}          % Shortcut for procname: "gen_J_mtx" (italic, with quotes)
+\newcommand{\qgBm}{\textsl{gen\_B\_mtx}}          % Shortcut for procname: "gen_B_mtx" (italic, with quotes)
+\newcommand{\qgetBm}{\textsl{get\_B\_mtx}}          % Shortcut for procname: "gen_B_mtx" (italic, with quotes)
+\newcommand{\qgetCm}{\textsl{get\_C\_mtx}}
+\newcommand{\qgenCm}{\textsl{gen\_C\_mtx}}
+\newcommand{\qcCm}{\textsl{comp\_C\_mtx}}
+\newcommand{\qgKm}{\textsl{gen\_K\_mtx}}          % Shortcut for procname: "gen_K_mtx" (italic, with quotes)
+\newcommand{\qgetKm}{\textsl{get\_K\_mtx}}          % Shortcut for procname: "gen_K_mtx" (italic, with quotes)
+\newcommand{\qgPv}{\textsl{gen\_P\_vct}}          % Shortcut for procname: "gen_P_vct" (italic, with quotes)
+\newcommand{\qgetPv}{\textsl{get\_P\_vct}}          % Shortcut for procname: "gen_P_vct" (italic, with quotes)
+\newcommand{\qaKs}{\textsl{assemble\_K\_system}}  % Shortcut for procname: "assemble_K_system" (italic, with quotes)
+\newcommand{\qaPs}{\textsl{assemble\_P\_system}}  % Shortcut for procname: "assemble_P_system" (italic, with quotes)
+\newcommand{\qpXl}{\textsl{plot\_X\_loc}}          % Shortcut for procname: plot_X_loc
+\newcommand{\qpXg}{\textsl{plot\_X\_glb}}          % Shortcut for procname: plot_X_glb
+\newcommand{\qpNl}{\textsl{plot\_N\_loc}}          % Shortcut for procname: plot_N_loc
+\newcommand{\qpfl}{\textsl{plot\_field\_loc}}             % Shortcut for procname: plot_N_loc
+\newcommand{\qpfg}{\textsl{plot\_field\_glb}}             % Shortcut for procname: plot_N_loc
+\newcommand{\qpfcnl}{\textsl{plot\_fcn\_loc}}             % Shortcut for procname: plot_N_loc
+\newcommand{\qpug}{\textsl{plot\_u\_glb}}          % Shortcut for procname: plot_u_glb
+\newcommand{\qps}{\textsl{plot\_system}}          % Shortcut for procname: plot_system
+\newcommand{\qppl}{\textsl{plot\_p\_loc}}          % Shortcut for procname: gen_p_loc
+\newcommand{\qppg}{\textsl{plot\_p\_glb}}          % Shortcut for procname: gen_p_loc
+\newcommand{\qpVg}{\textsl{plot\_V\_glb}}          % Shortcut for procname: gen_p_loc
+\newcommand{\qpVgq}{\textsl{plot\_V\_glb} }          % Shortcut for procname: gen_p_loc
+\newcommand{\qdg}{\textsl{diff\_glb}}          % Shortcut for procname: plot_u_glb
+\newcommand{\qgDm}{\textsl{get\_D\_mtx}}          % Shortcut for procname: plot_system
+\newcommand{\qgdo}{\textsl{get\_diff\_op}}          % Shortcut for procname: gen_p_loc
+\newcommand{\qcJm}{\textsl{comp\_J\_mtx}}          % Shortcut for procname: gen_p_loc
+\newcommand{\qcBm}{\textsl{comp\_B\_mtx}}          % Shortcut for procname: gen_p_loc
+\newcommand{\qcKm}{\textsl{comp\_K\_mtx}}          % Shortcut for procname: gen_p_loc
+\newcommand{\qcPv}{\textsl{comp\_P\_vct}}          % Shortcut for procname: gen_p_loc
+\newcommand{\qdiffglb}{\textsl{diff\_glb}}          % Shortcut for procname: gen_p_loc
+\newcommand{\qgPvl}{\textsl{gen\_P\_vct\_line}}            % Shortcut for procname: gen_p_loc
+\newcommand{\qgPva}{\textsl{gen\_P\_vct\_area}}            % Shortcut for procname: gen_p_loc
+\newcommand{\qgPvb}{\textsl{gen\_P\_vct\_body}}            % Shortcut for procname: gen_p_loc
+\newcommand{\qget}{\textsl{gen\_elem\_type}}            % Shortcut for procname: gen_p_loc
+\newcommand{\qret}{\textsl{read\_elem\_type}}            % Shortcut for procname: gen_p_loc
+\newcommand{\qset}{\textsl{save\_elem\_type}}            % Shortcut for procname: gen_p_loc
+\newcommand{\qgetvv}{\textsl{get\_v\_vct}}            % Shortcut for procname: gen_p_loc
+
+
+%--- mit Leerzeichen am Ende
+%---arguments
+\newcommand{\qXlocq}{\textsl{X\_loc} }
+\newcommand{\qrsq}{\textsl{rset} }
+\newcommand{\qssq}{\textsl{sset} }
+\newcommand{\qtsq}{\textsl{tset} }
+\newcommand{\qrstsq}{\textsl{rset, sset} and \textsl{tset} }
+\newcommand{\qXrstq}{\textsl{X\_rst} }
+\newcommand{\qNcq}{\textsl{N\_c} }
+\newcommand{\qNmq}{\textsl{N\_m} }
+\newcommand{\qNiq}{\textsl{N\_i} }
+\newcommand{\qNcmiq}{\textsl{N\_cmi} }
+\newcommand{\qNvctq}{\textsl{N\_vct} }
+\newcommand{\qNmtxq}{\textsl{N\_mtx} }
+\newcommand{\qNmtxgeoq}{\textsl{N\_mtx\_geo} }
+\newcommand{\qMq}{\textsl{M} }
+\newcommand{\qJmtxq}{\textsl{J\_mtx} }
+\newcommand{\qBmtxq}{\textsl{B\_mtx} }
+\newcommand{\qKmtxq}{\textsl{K\_mtx} }
+\newcommand{\qXglbq}{\textsl{X\_glb} }
+\newcommand{\qJinvq}{\textsl{J\_inv} }                  % Shortcut for procname: gen_p_loc
+\newcommand{\qsampleelemq}{\textsl{sample\_elem} }      % Shortcut for procname: gen_p_loc
+\newcommand{\qdiffopq}{\textsl{diff\_op} }              % Shortcut for procname: gen_p_loc
+\newcommand{\qDmtxq}{\textsl{D\_mtx} }                  % Shortcut for procname: gen_p_loc
+\newcommand{\qPvctq}{\textsl{P\_vct} }                  % Shortcut for procname: gen_p_loc
+\newcommand{\qnintq}{\textsl{n\_int} }        % Shortcut for procname: gen_p_loc
+\newcommand{\qnintlineq}{\textsl{n\_int\_line} }          % Shortcut for procname: gen_p_loc
+\newcommand{\qnintareaq}{\textsl{n\_int\_area} }          % Shortcut for procname: gen_p_loc
+\newcommand{\qnintbodyq}{\textsl{n\_int\_body} }          % Shortcut for procname: gen_p_loc
+\newcommand{\qldlq}{\textsl{line\_def\_loc} }            % Shortcut for procname: gen_p_loc
+\newcommand{\qadlq}{\textsl{area\_def\_loc} }            % Shortcut for procname: gen_p_loc
+\newcommand{\qsystemdataq}{\textsl{system\_data} }            % Shortcut for procname: gen_p_loc
+
+%---procedures
+\newcommand{\qgNvq}{\textsl{gen\_N\_vct} }              % Shortcut for procname: "gen_N_vct" (italic, with quotes)
+\newcommand{\qgetNvq}{\textsl{get\_N\_vct} }            % Shortcut for procname: "gen_N_vct" (italic, with quotes)
+%---ungewandelt in "get" Prozeduren
+\newcommand{\qghsfrq}{\textsl{get\_hsf\_rectangle} }    % Shortcut for procname: "gen_hsf_rectangle" (italic, with quotes)
+\newcommand{\qghsftq}{\textsl{get\_hsf\_triangle} }     % Shortcut for procname: "gen_hsf_triangle" (italic, with quotes)
+\newcommand{\qglsfrq}{\textsl{get\_lsf\_rectangle} }    % Shortcut for procname: "gen_lsf_rectangle" (italic, with quotes)
+\newcommand{\qglsftq}{\textsl{get\_lsf\_triangle} }     % Shortcut for procname: "gen_lsf_tritangle" (italic, with quotes)
+\newcommand{\qggmq}{\textsl{get\_gauss\_mtx} }          % Shortcut for procname: gen_p_loc
+%---
+\newcommand{\qcmirq}{\textsl{c\_m\_i\_rectangle} }      % Shortcut for procname: "c_m_i_rectangle" (italic, with quotes)
+\newcommand{\qcmitq}{\textsl{c\_m\_i\_triangle} }       % Shortcut for procname: "c_m_i_tritangle" (italic, with quotes)
+\newcommand{\qgNmq}{\textsl{gen\_N\_mtx} }              % Shortcut for procname: "gen_N_mtx" (italic, with quotes)
+\newcommand{\qgetNmq}{\textsl{get\_N\_mtx} }            % Shortcut for procname: "gen_N_mtx" (italic, with quotes)
+\newcommand{\qgJmq}{\textsl{gen\_J\_mtx} }              % Shortcut for procname: "gen_J_mtx" (italic, with quotes)
+\newcommand{\qgetJmq}{\textsl{get\_J\_mtx} }            % Shortcut for procname: "gen_J_mtx" (italic, with quotes)
+\newcommand{\qgBmq}{\textsl{gen\_B\_mtx} }              % Shortcut for procname: "gen_B_mtx" (italic, with quotes)
+\newcommand{\qgetBmq}{\textsl{get\_B\_mtx} }            % Shortcut for procname: "gen_B_mtx" (italic, with quotes)
+\newcommand{\qgetCmq}{\textsl{get\_C\_mtx} }
+\newcommand{\qgCmq}{\textsl{gen\_C\_mtx} }
+\newcommand{\qgKmq}{\textsl{gen\_K\_mtx} }              % Shortcut for procname: "gen_K_mtx" (italic, with quotes)
+\newcommand{\qgetKmq}{\textsl{get\_K\_mtx} }            % Shortcut for procname: "gen_K_mtx" (italic, with quotes)
+\newcommand{\qgPvq}{\textsl{gen\_P\_vct} }              % Shortcut for procname: "gen_P_vct" (italic, with quotes)
+\newcommand{\qgetPvq}{\textsl{get\_P\_vct} }            % Shortcut for procname: "gen_P_vct" (italic, with quotes)
+\newcommand{\qaKsq}{\textsl{assemble\_K\_system} }      % Shortcut for procname: "assemble_K_system" (italic, with quotes)
+\newcommand{\qaPsq}{\textsl{assemble\_P\_system} }      % Shortcut for procname: "assemble_P_system" (italic, with quotes)
+\newcommand{\qpXlq}{\textsl{plot\_X\_loc} }             % Shortcut for procname: plot_X_loc
+\newcommand{\qpXgq}{\textsl{plot\_X\_glb} }             % Shortcut for procname: plot_X_glb
+\newcommand{\qpNlq}{\textsl{plot\_N\_loc} }             % Shortcut for procname: plot_N_loc
+\newcommand{\qpflq}{\textsl{plot\_field\_loc} }             % Shortcut for procname: plot_N_loc
+\newcommand{\qpfgq}{\textsl{plot\_field\_glb} }             % Shortcut for procname: plot_N_loc
+\newcommand{\qpfcnlq}{\textsl{plot\_fcn\_loc} }             % Shortcut for procname: plot_N_loc
+\newcommand{\qpugq}{\textsl{plot\_u\_glb} }             % Shortcut for procname: plot_u_glb
+\newcommand{\qpsq}{\textsl{plot\_system} }              % Shortcut for procname: plot_system
+\newcommand{\qpplq}{\textsl{plot\_p\_loc} }             % Shortcut for procname: gen_p_loc
+\newcommand{\qppgq}{\textsl{plot\_p\_glb} }             % Shortcut for procname: gen_p_loc
+\newcommand{\qdgq}{\textsl{diff\_glb} }                 % Shortcut for procname: plot_u_glb
+\newcommand{\qgDmq}{\textsl{get\_D\_mtx} }              % Shortcut for procname: plot_system
+\newcommand{\qgetDmq}{\textsl{get\_D\_mtx} }              % Shortcut for procname: plot_system
+\newcommand{\qgdoq}{\textsl{get\_diff\_op} }            % Shortcut for procname: gen_p_loc
+\newcommand{\qgetdoq}{\textsl{get\_diff\_op} }            % Shortcut for procname: gen_p_loc
+\newcommand{\qgetdiffopq}{\textsl{get\_diff\_op} }            % Shortcut for procname: gen_p_loc
+\newcommand{\qcJmq}{\textsl{comp\_J\_mtx} }             % Shortcut for procname: gen_p_loc
+\newcommand{\qcBmq}{\textsl{comp\_B\_mtx} }             % Shortcut for procname: gen_p_loc
+\newcommand{\qcKmq}{\textsl{comp\_K\_mtx} }             % Shortcut for procname: gen_p_loc
+\newcommand{\qcPvq}{\textsl{comp\_P\_vct} }             % Shortcut for procname: gen_p_loc
+\newcommand{\qdiffglbq}{\textsl{diff\_glb} }            % Shortcut for procname: gen_p_loc
+\newcommand{\qconvertdiffexprlistq}{\textsl{convert\_diff\_expr\_list} }            % Shortcut for procname: gen_p_loc
+\newcommand{\qgPvlq}{\textsl{gen\_P\_vct\_line} }            % Shortcut for procname: gen_p_loc
+\newcommand{\qgPvaq}{\textsl{gen\_P\_vct\_area} }            % Shortcut for procname: gen_p_loc
+\newcommand{\qgPvbq}{\textsl{gen\_P\_vct\_body} }            % Shortcut for procname: gen_p_loc
+\newcommand{\qgetq}{\textsl{gen\_elem\_type} }            % Shortcut for procname: gen_p_loc
+\newcommand{\qretq}{\textsl{read\_elem\_type} }            % Shortcut for procname: gen_p_loc
+\newcommand{\qsetq}{\textsl{save\_elem\_type} }            % Shortcut for procname: gen_p_loc
+
+% --- "Maple"-input and output: ------------------------------------------------------------------------
+% Der folgende Abschnitt sorgt fuer Maple-input in roter Schrift (fett) und MAPLE-output in blauer Schrift (normal):
+% Define a new command to display text as MAPLE-input (without prompt) with the short-cut \mi{text}
+  \newcommand{\mi}[1]{\texttt{\textup{\textbf{\textcolor{red}{#1}}}}}
+% Define a new command to display text as MAPLE-output with the short-cut \mo{text}
+  \newcommand{\mo}[1]{\textrm{\textit{\textmd{\textcolor{blue}{#1}}}}}
+
+%\newenvironment{diplvar}{\begin{texttt}}{\end{texttt}}
+
+% -----------------------------------------------------------------------------------------------------
+
+
+%---------------------------------------------------------------------------
+% Define a new command to display citation of equations
+\newcommand{\Eq}[1]{\textnormal{Eq.\,(}#1\textnormal{)}}
+\newcommand{\Eqs}[2]{\textnormal{Eqs\,(}#1\textnormal{) and (}#2\textnormal{)}}
